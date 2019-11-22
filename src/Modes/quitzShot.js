@@ -888,7 +888,7 @@ export default class App extends React.Component {
                 <Text
                   style={{
                     color: "#4dd599",
-                    paddingTop: 10,
+                    paddingTop: 6,
                     fontSize: 21
                   }}
                 >
@@ -897,7 +897,7 @@ export default class App extends React.Component {
                 <Text
                   style={{
                     color: "#4dd599",
-                    paddingTop: 10,
+                    paddingTop: 4,
                     fontSize: 21
                   }}
                 >
@@ -906,7 +906,7 @@ export default class App extends React.Component {
                 <Text
                   style={{
                     color: "#ff0000",
-                    paddingTop: 10,
+                    paddingTop: 6,
                     fontSize: 21
                   }}
                 >
@@ -915,7 +915,7 @@ export default class App extends React.Component {
                 <Text
                   style={{
                     color: "#ff0000",
-                    paddingTop: 10,
+                    paddingTop: 4,
                     fontSize: 21
                   }}
                 >
@@ -924,7 +924,7 @@ export default class App extends React.Component {
                 <Text
                   style={{
                     color: "#f45905",
-                    paddingTop: 10,
+                    paddingTop: 6,
                     fontSize: 21
                   }}
                 >
@@ -933,7 +933,7 @@ export default class App extends React.Component {
                 <Text
                   style={{
                     color: "#f45905",
-                    paddingTop: 10,
+                    paddingTop: 4,
                     fontSize: 21
                   }}
                 >
@@ -943,7 +943,7 @@ export default class App extends React.Component {
                 <Text
                   style={{
                     color: "#f5f0e3",
-                    paddingTop: 10,
+                    paddingTop: 6,
                     fontSize: 14
                   }}
                 >

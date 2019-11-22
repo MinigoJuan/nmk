@@ -90,8 +90,8 @@ class index extends Component {
                 }}
               >
                 El abuso del consumo del alcohol puede ser perjudicial para tu
-                salud, Te recomendamos que si utilizas App Beer debes ser mayor
-                de 18 años
+                salud, Te recomendamos que si utilizas Minigo debes ser mayor de
+                18 años
               </Text>
             </View>
             <View style={{ marginTop: 8, marginBottom: 3 }}>
