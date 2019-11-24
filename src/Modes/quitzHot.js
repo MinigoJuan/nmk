@@ -6,12 +6,14 @@ import {
   Dimensions,
   Image,
   Animated,
-  PanResponder
+  PanResponder,
+  Clipboard,
+  Alert
 } from "react-native";
 
 const SCREEN_HEIGHT = Dimensions.get("window").height;
 const SCREEN_WIDTH = Dimensions.get("window").width;
-import { Icon } from "react-native-elements";
+import { Overlay, Icon, Button } from "react-native-elements";
 const Users = [
   {
     id: "0",
@@ -534,10 +536,47 @@ export default class App extends React.Component {
     this.position = new Animated.ValueXY();
     this.state = {
       currentIndex: 0,
-      currentIndexDrink: 0
+      currentIndexDrink: 0,
+      isVisibleUE: false,
+      isVisibleDIDI: false,
+      isVisibleUber: false,
+      isVisibleRappi: false
     };
   }
+  onCloseIcon = () => {
+    this.setState({
+      isVisibleUE: false,
+      isVisibleDIDI: false,
+      isVisibleUber: false,
+      isVisibleRappi: false
+    });
+  };
   componentWillMount() {
+    setTimeout(
+      function() {
+        this.setState({ isVisibleUE: true });
+      }.bind(this),
+      480000
+    );
+
+    setTimeout(
+      function() {
+        this.setState({ isVisibleDIDI: true });
+      }.bind(this),
+      720000
+    );
+    setTimeout(
+      function() {
+        this.setState({ isVisibleUber: true });
+      }.bind(this),
+      60000
+    );
+    setTimeout(
+      function() {
+        this.setState({ isVisibleRappi: true });
+      }.bind(this),
+      240000
+    );
     this.GenerateRandomNumber(), this.GenerateRandomNumberDrink();
     this.PanResponder = PanResponder.create({
       onStartShouldSetPanResponder: (evt, gestureState) => {
@@ -573,6 +612,32 @@ export default class App extends React.Component {
       }
     });
   }
+  componentWillUnmount = () => {
+    console.log("unready");
+
+    this.setState({
+      isVisibleUE: false,
+      isVisibleDIDI: false,
+      isVisibleUber: false,
+      isVisibleRappi: false
+    });
+  };
+  clipborUE = () => {
+    Clipboard.setString("eats-9loxl5");
+    Alert.alert("Código copiado", "Utilizalo en Uber Eats", [{ text: "OK" }]);
+  };
+  clipborDIDI = () => {
+    Clipboard.setString("MXJ9VMGS");
+    Alert.alert("Código copiado", "Utilizalo en DiDi", [{ text: "OK" }]);
+  };
+  clipborUber = () => {
+    Clipboard.setString("9loxl5");
+    Alert.alert("Código copiado", "Utilizalo en Uber", [{ text: "OK" }]);
+  };
+  clipborRappi = () => {
+    Clipboard.setString("b9w25665237");
+    Alert.alert("Código copiado", "Utilizalo en Rappi", [{ text: "OK" }]);
+  };
   GenerateRandomNumber = () => {
     var RandomNumber = Math.floor(Math.random() * (81 - 0)) + 1;
     this.setState({
@@ -691,6 +756,227 @@ export default class App extends React.Component {
             onPress={() => this.props.navigation.goBack()}
           />
         </View>
+        <Overlay
+          isVisible={this.state.isVisibleUE}
+          windowBackgroundColor="#19212E"
+          overlayBackgroundColor="#3c3d47"
+          width={300}
+          height={300}
+          overlayStyle={styles.styOver}
+          onBackdropPress={() => this.onCloseIcon()}
+        >
+          <Icon
+            raised
+            size={15}
+            name="close"
+            type="evilicon"
+            color="#517fa4"
+            containerStyle={styles.styIcon}
+            onPress={this.onCloseIcon}
+          />
+
+          <View style={styles.textView}>
+            <Text style={styles.styh2}>Te regalamos:</Text>
+            <Text style={styles.costos}>
+              $100 <Text style={styles.styh3}>en tu primer pedido</Text>
+            </Text>
+            <Text style={styles.costos}>
+              <Text style={styles.styh3}>en Uber Eats.</Text>
+            </Text>
+          </View>
+          <Text style={{ fontSize: 20, color: "white" }}>Cupón:</Text>
+          <View style={styles.styPromo}>
+            <Text onPress={this.clipborUE} style={styles.styTextPromo}>
+              eats-9loxl5
+            </Text>
+          </View>
+          <View style={styles.styImages}>
+            <Image
+              source={require("../../assets/Ueats.png")}
+              style={{ width: 100, height: 50 }}
+              resizeMode="contain"
+            />
+            <Image
+              source={require("../../assets/minigo.png")}
+              style={{ width: 110, height: 45 }}
+              resizeMode="contain"
+            />
+          </View>
+          <Text style={styles.styh4}>
+            *Valido en tu primera compra en Uber Eats
+          </Text>
+        </Overlay>
+        <Overlay
+          isVisible={this.state.isVisibleDIDI}
+          windowBackgroundColor="#19212E"
+          overlayBackgroundColor="#eae9e9"
+          width={300}
+          height={300}
+          overlayStyle={styles.styOver}
+          onBackdropPress={() => this.onCloseIcon()}
+        >
+          <Icon
+            raised
+            size={15}
+            name="close"
+            type="evilicon"
+            color="#517fa4"
+            containerStyle={styles.styIcon}
+            onPress={this.onCloseIcon}
+          />
+
+          <View style={styles.textView}>
+            <Text style={{ fontSize: 18, marginBottom: 3, color: "#202040" }}>
+              Te regalamos:
+            </Text>
+            <Text style={styles.costos}>
+              50%{" "}
+              <Text style={{ fontSize: 18, marginBottom: 3, color: "#202040" }}>
+                de descuento en
+              </Text>
+            </Text>
+            <Text style={{ fontSize: 18, marginBottom: 3, color: "#202040" }}>
+              tus primeros viajes.
+            </Text>
+          </View>
+          <Text style={{ fontSize: 20, color: "#202040" }}>Cupón:</Text>
+          <View
+            style={{
+              marginTop: 8,
+              marginBottom: 8,
+              borderRadius: 2,
+              borderWidth: 0.5,
+              borderColor: "#202040"
+            }}
+          >
+            <Text
+              onPress={this.clipborDIDI}
+              style={{
+                margin: 4,
+                color: "#202040",
+                fontSize: 25,
+                fontStyle: "normal"
+              }}
+            >
+              MXJ9VMGS
+            </Text>
+          </View>
+          <View style={styles.styImages}>
+            <Image
+              source={require("../../assets/didi.png")}
+              style={{ width: 100, height: 50 }}
+              resizeMode="contain"
+            />
+            <Image
+              source={require("../../assets/minigo.png")}
+              style={{ width: 110, height: 45 }}
+              resizeMode="contain"
+            />
+          </View>
+          <Text style={{ fontSize: 9, marginBottom: 3, color: "#202040" }}>
+            *Valido en tu primeros viajes en DIDI.
+          </Text>
+        </Overlay>
+        <Overlay
+          isVisible={this.state.isVisibleUber}
+          windowBackgroundColor="#19212E"
+          overlayBackgroundColor="#3c3d47"
+          width={300}
+          height={300}
+          overlayStyle={styles.styOver}
+          onBackdropPress={() => this.onCloseIcon()}
+        >
+          <Icon
+            raised
+            size={15}
+            name="close"
+            type="evilicon"
+            color="#517fa4"
+            containerStyle={styles.styIcon}
+            onPress={this.onCloseIcon}
+          />
+
+          <View style={styles.textView}>
+            <Text style={styles.styh2}>Te regalamos:</Text>
+            <Text style={styles.costos}>
+              50% <Text style={styles.styh3}> de descuento en tus </Text>
+            </Text>
+            <Text style={styles.costos}>
+              <Text style={styles.styh3}>primeros 3 viajes. </Text>
+            </Text>
+          </View>
+          <Text style={{ fontSize: 20, color: "white" }}>Cupón:</Text>
+          <View style={styles.styPromo}>
+            <Text onPress={this.clipborUber} style={styles.styTextPromo}>
+              9loxl5
+            </Text>
+          </View>
+          <View style={styles.styImages}>
+            <Image
+              source={require("../../assets/Uber_Logo_White.png")}
+              style={{ width: 100, height: 50 }}
+              resizeMode="contain"
+            />
+            <Image
+              source={require("../../assets/minigo.png")}
+              style={{ width: 110, height: 45 }}
+              resizeMode="contain"
+            />
+          </View>
+          <Text style={styles.styh4}>
+            *Valido en tu primeros viajes en UBER
+          </Text>
+        </Overlay>
+        <Overlay
+          isVisible={this.state.isVisibleRappi}
+          windowBackgroundColor="#19212E"
+          overlayBackgroundColor="#FD6152"
+          width={300}
+          height={300}
+          overlayStyle={styles.styOver}
+          onBackdropPress={() => this.onCloseIcon()}
+        >
+          <Icon
+            raised
+            size={15}
+            name="close"
+            type="evilicon"
+            color="#517fa4"
+            containerStyle={styles.styIcon}
+            onPress={this.onCloseIcon}
+          />
+
+          <View style={styles.textView}>
+            <Text style={styles.styh2}>Te regalamos:</Text>
+            <Text style={styles.costos}>
+              $100 <Text style={styles.styh3}>en tu primer pedido y</Text>
+            </Text>
+            <Text style={styles.costos}>
+              $600 <Text style={styles.styh3}>en costos de envio</Text>
+            </Text>
+          </View>
+          <Text style={{ fontSize: 20, color: "white" }}>Cupón:</Text>
+          <View style={styles.styPromo}>
+            <Text onPress={this.clipborRappi} style={styles.styTextPromo}>
+              b9w25665237
+            </Text>
+          </View>
+          <View style={styles.styImages}>
+            <Image
+              source={require("../../assets/rappiwhite.png")}
+              style={{ width: 100, height: 50 }}
+              resizeMode="contain"
+            />
+            <Image
+              source={require("../../assets/minigo.png")}
+              style={{ width: 110, height: 45 }}
+              resizeMode="contain"
+            />
+          </View>
+          <Text style={styles.styh4}>
+            *Valido en tu primera compra en RAPPI
+          </Text>
+        </Overlay>
       </View>
     );
   }
@@ -702,5 +988,55 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center"
+  },
+  styOver: {
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 20
+  },
+  styIcon: {
+    alignSelf: "flex-end"
+  },
+  styTextPromo: {
+    margin: 4,
+    color: "white",
+    fontSize: 25,
+    fontStyle: "normal"
+  },
+  costos: {
+    color: "#FEC20A",
+    fontSize: 20
+  },
+  styPromo: {
+    marginTop: 8,
+    marginBottom: 8,
+    borderRadius: 2,
+    borderWidth: 0.5,
+    borderColor: "white"
+  },
+  styh2: {
+    fontSize: 18,
+    marginBottom: 3,
+    color: "#fffdf9"
+  },
+  styh3: {
+    fontSize: 14,
+    marginBottom: 3,
+    color: "#fffdf9"
+  },
+  styh4: {
+    fontSize: 9,
+    marginBottom: 3,
+    color: "#fffdf9"
+  },
+  styImages: { flexDirection: "row", marginTop: 7 },
+  codeRappi: {
+    fontSize: 18,
+    marginBottom: 3,
+    color: "#fffdf9"
+  },
+  textView: {
+    alignItems: "center",
+    marginBottom: 6
   }
 });

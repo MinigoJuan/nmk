@@ -16,7 +16,7 @@ const socialred = () => {
         light
         type="instagram"
         onPress={() => {
-          Linking.openURL("instagram://user?screen_name=minigoapp");
+          Linking.openURL("instagram://user?username=minigoapp");
         }}
       />
       <SocialIcon
