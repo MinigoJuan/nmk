@@ -9,6 +9,7 @@ import CategoryStudent from "../screns/CategoryStudent";
 import QuitzFriends from "../Modes/quitzFriends";
 import QuitzHot from "../Modes/quitzHot";
 import QuitzShot from "../Modes/quitzShot";
+import Adivina from "../Modes/quitzAdivina";
 // questions mode student
 import QuitzAleatotio from "../Modes/ModesEstudent/quitzAleatorio";
 import QuitzDerecho from "../Modes/ModesEstudent/QuitzDerecho";
@@ -38,6 +39,10 @@ const HomeScreen = createStackNavigator(
     },
     QuitzShot: {
       screen: QuitzShot,
+      navigationOptions: ({ navigation }) => ({})
+    },
+    Adivina: {
+      screen: Adivina,
       navigationOptions: ({ navigation }) => ({})
     },
     // ENCUESTAS DE ESTUDIANTE

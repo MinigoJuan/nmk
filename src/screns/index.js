@@ -1,8 +1,15 @@
 import React, { Component } from "react";
-import { Text, View, StyleSheet, Image, ActivityIndicator } from "react-native";
-import { Button, Overlay } from "react-native-elements";
+import {
+  Text,
+  View,
+  StyleSheet,
+  Image,
+  ActivityIndicator,
+  Linking,
+  Alert
+} from "react-native";
+import { Button, Overlay, SocialIcon } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
-import Social from "../components/socialred";
 
 class index extends Component {
   constructor(props) {
@@ -17,6 +24,88 @@ class index extends Component {
     this.setState({
       isVisible: true
     });
+  };
+
+  _handleOpenURL = () => {
+    let appUrl = `twitter://user?screen_name=minigoapp`;
+    Linking.canOpenURL(appUrl)
+      .then(supported => {
+        if (!supported) {
+          Alert.alert(
+            "¿Estas seguro que 'Minigo' pueda abrir 'Twitter'?",
+            " ",
+            [
+              {
+                text: "OK",
+                onPress: () => {
+                  Linking.openURL(`twitter://user?screen_name=minigoapp`);
+                }
+              },
+              { text: "Cancelar", onPress: () => {}, style: "cancel" }
+            ],
+            { cancelable: false }
+          );
+        } else {
+          return Linking.openURL(appUrl);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
+  _handleOpenURLI = () => {
+    let appUrl = `instagram://user?username=minigoapp`;
+    Linking.canOpenURL(appUrl)
+      .then(supported => {
+        if (!supported) {
+          Alert.alert(
+            "¿Estas seguro que 'Minigo' pueda abrir 'Instagram'?",
+            "",
+            [
+              {
+                text: "OK",
+                onPress: () => {
+                  Linking.openURL("instagram://user?username=minigoapp");
+                }
+              },
+              { text: "Cancelar", onPress: () => {}, style: "cancel" }
+            ],
+            { cancelable: false }
+          );
+        } else {
+          return Linking.openURL(appUrl);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  };
+  _handleOpenURLF = () => {
+    let appUrl = `fb://profile/109469397165034`;
+    Linking.canOpenURL(appUrl)
+      .then(supported => {
+        if (!supported) {
+          Alert.alert(
+            "¿Estas seguro que 'Minigo' pueda abrir 'FaceBook'?",
+            "",
+            [
+              {
+                text: "OK",
+                onPress: () => {
+                  Linking.openURL("fb://profile/109469397165034");
+                }
+              },
+              { text: "Cancelar", onPress: () => {}, style: "cancel" }
+            ],
+            { cancelable: false }
+          );
+        } else {
+          return Linking.openURL(appUrl);
+        }
+      })
+      .catch(err => {
+        console.error(err);
+      });
   };
   render() {
     return (
@@ -55,8 +144,13 @@ class index extends Component {
             }
           ></Button>
         </View>
-        <View style={styles.IconsView}>
-          <Social></Social>
+        <View>
+          <Text style={{ color: "#f9f6f7" }}>Enviarnos tus preguntas por:</Text>
+          <View style={styles.IconsView}>
+            <SocialIcon light type="twitter" onPress={this._handleOpenURL} />
+            <SocialIcon light type="instagram" onPress={this._handleOpenURLI} />
+            <SocialIcon light type="facebook" onPress={this._handleOpenURLF} />
+          </View>
         </View>
         <Overlay
           borderRadius={10}

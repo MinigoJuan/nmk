@@ -17,515 +17,352 @@ import { Overlay, Icon, Button } from "react-native-elements";
 const Users = [
   {
     id: "0",
-    question: "¿Quién fue su primer amor y cómo terminó esa historia?",
-    answers: "",
-    color: "#293462"
+    question: "¿Describe una fantasia que tengas?"
   },
   {
     id: "1",
-    question: "¿Qué es lo más loco que has hecho por amor?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué es lo más loco que has hecho para tener sexo?"
   },
   {
     id: "2",
-    question: "¿Cómo fue tu primer beso?",
-    space: " ",
-    answers: "",
-    color: "#293462"
+    question: "¿Cómo fue tu primera vez?"
   },
   {
     id: "3",
-    question: "¿Con qué celebridad te gustaría tener sexo?",
-    answers: "",
-    color: "#293462"
+    question: "¿Dejarías que alguien te atara las manos y los pies a la cama?"
   },
   {
     id: "4",
-    question: "¿Has sido infiel?",
-    answers: "Toman 2 tragos",
-    color: "#293462"
+    question: "¿Has sido infiel?"
   },
   {
     id: "5",
-    question: "¿Quién fue la primera persona de la que te enamoraste?",
-    answers: "",
-    color: "#293462"
+    question: "¿Quién fue la primera persona con la que tuviste sexo?"
   },
   {
     id: "6",
-    question: "¿Cuál piensas que es tú mejor cualidad no física?",
-    answers: "",
-    color: "#7c0a02"
+    question: "¿Cuál piensas que es tú mejor cualidad no física en la cama?"
   },
   {
     id: "7",
-    question: "¿Cuál es la parte más sensible de tu cuerpo?",
-    answers: "",
-    color: "#f7b71d"
+    question: "¿Has tenido sexo estando ebrio?"
   },
   {
     id: "8",
-    question: "¿Has besado a alguien de tu mismo sexo?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gustaría usar juguetes durante el sexo?"
   },
   {
     id: "9",
-    question: "¿Cuál es la parte que menos te gusta de tu cuerpo?",
-    answers: "",
-    color: "#293462"
+    question: "¿Cuan es la parte del cuerpo de la otra persona que te exita?"
   },
   {
     id: "10",
-    question: "¿Tienes algún fetiche que quieras confesar?",
-    answers: "",
-    color: "#293462"
+    question: "¿Tienes algún fetiche que quieras confesar?"
   },
   {
     id: "11",
-    question: "¿Cómo calificas tu desempeño en el sexo?",
-    answers: "",
-    color: "#293462"
+    question:
+      "¿Has practicado sexo alguna vez mientras veías una película porno?"
   },
   {
     id: "12",
-    question: "¿Tienes una fantasía sexual prohibida?",
-    answers: "Marcas de cerveza",
-    color: "#420000"
+    question: "¿Tienes una fantasía sexual prohibida?"
   },
   {
     id: "13",
-    question: "¿Qué es lo más doloroso que te ha pasado?",
-    answers: "",
-    color: "#293462"
+    question: "¿Hay alguna posición sexual que te gustaría intentar?"
   },
   {
     id: "14",
-    question: "¿Con cuál animal te identificas?",
-    answers: "",
-    color: "#293462"
+    question: "¿Alguna vez has pensado en grabarse mientras tienes sexo?"
   },
   {
     id: "15",
-    question: "¿Tienes una pesadilla o sueño constante?",
-    answers: "",
-    color: "#293462"
+    question: "¿En qué lugar público te gustaría hacerlo?"
   },
   {
     id: "16",
-    question: "¿Tienes una página porno favorita?",
-    answers: "",
-    color: "#7c0a02"
+    question: "¿Tienes una página porno favorita?"
   },
   {
     id: "17",
-    question: "¿Cómo aprendiste a besar?",
-    answers: "",
-    color: "#293462"
+    question:
+      "¿Te gustaría que usuran o usar lencería o algún tipo de ropa en especial?"
   },
   {
     id: "18",
-    question: " ¿Cómo fue tu primera vez?",
-    answers: "",
-    color: "#293462"
+    question: " ¿Te gustaría probar el sadomasoquismo?"
   },
   {
     id: "19",
-    question: "¿Algunas vez fingiste un orgasmo?",
-    answers: "",
-    color: "#f7b71d"
+    question: "¿Algunas vez fingiste un orgasmo?"
   },
   {
     id: "20",
-    question: "¿Bailarías sexy para alguien?",
-    answers: "",
-    color: "#293462"
+    question: "¿Bailarías sexy para alguien?"
   },
   {
     id: "21",
-    question: "¿Has ido a una playa nudista?",
-    answers: "",
-    color: "#293462"
+    question: "¿Has fantaseado con que alguien más te vea teniendo sexo?"
   },
   {
     id: "22",
-    question: "¿Qué es lo que jamás harías por amor?",
-    answers: "",
-    color: "#293462"
+    question:
+      "¿Te gustaria que alguien tenga la iniciativa, o prefieres hacer tú, dar el primer paso?"
   },
   {
     id: "23",
-    question: "¿Te tatuarías en pareja?",
-    answers: "",
-    color: "#293462"
+    question:
+      "¿Te gustaría que jalar o que te jalen el cabello mientras lo tienes sexo?"
   },
   {
     id: "24",
-    question: "¿Has amado más a tu mascota que a alguna persona?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gustan los ruidos o el sexo silencioso?"
   },
   {
     id: "25",
-    question: "¿Tienes algún secreto que te avergüence?",
-    answers: "",
-    color: "#293462"
+    question: "¿Prefieres estar arriba o abajo?"
   },
   {
     id: "26",
-    question: "¿Te gustan los disfraces eróticos?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué música podrías decir que te enciende más?"
   },
   {
     id: "27",
-    question: "¿Qué canción amas en secreto?",
-    answers: "",
-    color: "#420000"
+    question: "¿Te gusta romántico o rudo por completo?"
   },
   {
     id: "28",
-    question: "¿Qué tipo de sexo jamás has practicado?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué tipo de sexo jamás has practicado?"
   },
   {
     id: "29",
-    question: "¿Puedes describir la sensación de orgasmo en una palabra?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué es lo más sucio que has imaginado o hecho en el sexo?"
   },
   {
     id: "30",
-    question: "¿Has entrado a alguna página de cybersex?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gustaría tener sexo inmediatamente al despertar?"
   },
   {
     id: "31",
-    question: "¿Cuál ha sido la peor etapa de tu vida? ",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gusta el sexo oral? "
   },
   {
     id: "32",
-    question: "¿Le has llevado serenata a alguien?",
-    answers: "",
-    color: "#7c0a02"
+    question: "¿Te gusta hacer o que te hagan sexo oral?"
   },
   {
     id: "33",
-    question: "¿Has besado a alguno de tus amigos más cercanos? ¿Quién?",
-    answers: "",
-    color: "#7c0a02"
+    question: "¿Has besado a alguno de tus amigos más cercanos? ¿Quién?"
   },
   {
     id: "34",
-    question: "¿Le confesarías a tu mamá tu mejor o peor experiencia sexual?",
-    answers: "",
-    color: "#293462"
+    question: "¿Has pensado tener un trío?"
   },
   {
     id: "35",
-    question: "¿Te han sorprendido masturbándote?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te han sorprendido masturbándote?"
   },
   {
     id: "36",
-    question: "¿Qué prefieres: tener sexo, comer o dormir?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gustan los besos con mordidas?"
   },
   {
     id: "37",
-    question: "¿Perdonarías una infidelidad?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gustaría usar algún disfraz?"
   },
   {
     id: "38",
-    question: "Si pudieras cambiar algo de tu cuerpo, ¿qué sería?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué te gusta hacer después de tener sexo?"
   },
   {
     id: "39",
-    question: "¿Qué es lo más loco que has hecho por amor?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué cosas te hacen llegar al orgasmo rápidamente?"
   },
-
   {
     id: "40",
-    question: "Confiésa uno de tus secretos.",
-    answers: "",
-    color: "#293462"
+    question:
+      "¿Hay alguna parte de tu cuerpo muy específica que te gusta que te besen?"
   },
   {
     id: "41",
-    question: "¿Alguna vez te han sorprendido en una situación comprometedora?",
-    answers: "",
-    color: "#293462"
+    question:
+      "¿Alguna vez te han sorprendido en una situación comprometedora?, Cuentala "
   },
   {
     id: "42",
-    question: "¿Alguna vez has dudado de tu orientación sexual?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gustaría tener sexo por teléfono/Facetime?"
   },
   {
     id: "43",
     question:
-      "Si te encuentras a tu ex en una fiesta y te pide un beso, ¿se lo darías",
-    answers: "",
-    color: "#7c0a02"
+      "Si te encuentras a tu ex en una fiesta y te pide un beso, ¿se lo darías?"
   },
   {
     id: "44",
-    question:
-      "Si tuvieras la oportunidad de salir en una cita con una persona famosa, ¿a quién elegirías?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te has grabado masturbandote y se lo has mandano a alguien? "
   },
   {
     id: "45",
-    question: "¿Cuál es tu fantasía sexual más deseada?",
-    answers: "",
-    color: "#f7b71d"
+    question: "¿Cuál es tu fantasía sexual más deseada?"
   },
   {
     id: "46",
-    question: "¿Te has sentido atraído por alguna de tus amig@s? ",
-    answers: "",
-    color: "#420000"
+    question: "¿Te has sentido atraído por alguna de tus amig@s? "
   },
   {
     id: "47",
-    question: "¿Cuál es el lugar más extraño donde has intimado con alguien?",
-    answers: "",
-    color: "#293462"
+    question: "¿Cuál es el lugar más extraño donde has tenido sexo con alguien?"
   },
   {
     id: "48",
-    question: "¿Te gusta provocar o que te provoquen?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué es lo más sucio que te gustaría que alguien hiciera por ti?"
   },
   {
     id: "49",
-    question: "¿Alguna vez te has sentido incómodo en la intimidad?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gusta el sexting?"
   },
   {
     id: "50",
-    question: "¿Qué es lo primero que miras en una persona cuando la conoces?",
-    answers: "",
-    color: "#293462"
+    question: "¿Tienes algún fetiche?"
   },
   {
     id: "51",
-    Tema: "RETO",
-    question: "Da un beso de dos minutos a cualquier persona que tu quieras",
-    answers: "",
-    color: "#293462"
+
+    question: "¿Hay algo que jamás te veas haciendo en la cama?"
   },
   {
     id: "52",
-    Tema: "RETO",
-    question:
-      "Quítate 4 prendas que no podrás volver a usar durante el resto del juego.",
-    answers: "",
-    color: "#7c0a02"
+
+    question: "¿Te gustaría tener sexo en un coche?"
   },
   {
     id: "53",
-    Tema: "RETO",
-    question: "Haz una propuesta indecente.",
-    answers: "",
-    color: "#293462"
+
+    question: "¿Te gustaría hacerlo en la playa?"
   },
   {
     id: "54",
-    Tema: "RETO",
-    question:
-      "Cambia por tres horas, la foto de perfil de tu red social favorita por una fotografía donde aparezcamos los dos.",
-    answers: "",
-    color: "#293462"
+
+    question: "¿Tienes algún secreto sexual que te gustaría contar?"
   },
   {
     id: "55",
-    Tema: "RETO",
-    question: "Haz 3 preguntas íntimas a cualquiera de los participantes",
-    answers: "",
-    color: "#420000"
+
+    question: "Haz 3 preguntas íntimas a cualquiera de los participantes"
   },
   {
     id: "56",
-    question: "¿Amor o dinero?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te emociona que puedan atraparnos mientras tenemos sexo?"
   },
   {
     id: "57",
-    question: "¿Qué es lo más extraño que has buscado en internet?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gusta dormir con ropa o desnudo despues de tener sexo?"
   },
   {
     id: "58",
-    question: "¿Cuál es la cosa más infantil que todavía haces?",
-    answers: "",
-    color: "#293462"
+    question: "¿A que edad fue tu primera vez y en que lugar?"
   },
   {
     id: "59",
-    question: "¿Cuál es la foto de tu galeria más vergonzosa de ti? ",
-    answers: "",
-    color: "#293462"
+    question:
+      "¿Hay algún mueble con el que te gustaría experimentar nuevas posiciones? "
   },
   {
     id: "60",
-    question: "¿Con quién saldrías de aquí en una cita?",
-    answers: "",
-    color: "#293462"
+    question: "¿Has intentado las posiciones del kama-sutra?"
   },
   {
     id: "61",
-    question:
-      "¿Quién es la persona que más sabe de ti y qué tipo de secretos sobre tu vida guarda?",
-    answers: "",
-    color: "#420000"
+    question: "¿Te gustaría intentar el sexo anal?"
   },
   {
     id: "62",
-    question: "¿De qué color es tu ropa interior?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gusta que te rasguñen la espalda o alguna parte del cuerpo?"
   },
   {
     id: "63",
-    question: "¿De qué color es tu ropa interior?",
-    answers: ""
+    question: "¿Te gusta el sexo de reconciliación?"
   },
   {
     id: "64",
-    question: "¿Has hecho cosas borracho que al día siguiente no recuerdes?",
-    answers: "",
-    color: "#293462"
+    question: "¿Prefieres las películas o la literatura erótica?"
   },
   {
     id: "65",
-    question: "¿Quién es la persona más sexy aquí?",
-    answers: "",
-    color: "#293462"
+    question: "¿Encuentras el sexo como algo divertido?"
   },
   {
     id: "66",
-    question: "¿Por qué rompiste con tu último novio o novia?",
-    answers: "",
-    color: "#293462"
+    question: "¿Hay algo que te apague inmediatamente?"
   },
   {
     id: "67",
     question:
-      "¿En qué país te gustaría vivir con tu pareja si tuvieras la oportunidad?",
-    answers: "",
-    color: "#293462"
+      "¿Te gustan las bromas mientras tenemos sexo, o prefieres todo más serio y relajado?"
   },
   {
     id: "68",
-    question: "¿Cuál es tu talento especial que tengas en la cama?",
-    answers: "",
-    color: "#293462"
+    question: "¿Cuál es tu talento especial que tengas en la cama?"
   },
   {
     id: "69",
-    question: "¿Cuál es tu posisión favorita y por qué?",
-    answers: "",
-    color: "#293462"
+    question: "¿Cuál es tu posisión favorita y por qué?"
   },
   {
     id: "70",
-    question: "¿Alguna vez pensaste en engañar a tu novio / novia?",
-    answers: "",
-    color: "#293462"
+    question:
+      "¿Te gusta ver una película erótica/pornográfica antes de tener sexo?"
   },
   {
     id: "71",
-    question: "¿Cuál ha sido la peor fiesta a la que has ido?",
-    answers: "",
-    color: "#293462"
+    question: "¿Te gustaria tener sexo con los ojos vendados?"
   },
   {
     id: "72",
-    question: "¿Alguna vez has estado enamorado de una profesora secretamente?",
-    answers: "",
-    color: "#293462"
+    question: "¿Alguna vez has estado enamorado de una profesora secretamente?"
   },
   {
     id: "73",
     question:
-      "¿Alguna vez resultaste atractivo para alguien del mismo sexo? ¿Qué pasó? ¿Cuál fue tu reacción?",
-    answers: "",
-    color: "#293462"
+      "¿Alguna vez resultaste atractivo para alguien del mismo sexo? ¿Qué pasó? ¿Cuál fue tu reacción?"
   },
   {
     id: "74",
-    question: "¿Alguna vez te han echado de un club nocturno?",
-    answers: "",
-    color: "#293462"
+    question: "¿Alguna vez te han echado de un club nocturno?"
   },
   {
     id: "75",
-    question: "¿Que es lo más penoso que has tenido que hacer por sexo?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué prefieres, una cara bonita o un cuerpo sexy?"
   },
   {
     id: "76",
-    question:
-      "¿Qué es lo más estúpido que le has dicho a una persona que te gusta?",
-    answers: "",
-    color: "#293462"
+    question: "¿Le harías un striptease a tu pareja?"
   },
   {
     id: "77",
-    question: "¿Alguna vez has ocultado algo de tu pareja?",
-    answers: "",
-    color: "#293462"
+    question:
+      "Del 1 al 10… ¿cuánta importancia le das al sexo en tus relaciones de pareja??"
   },
   {
     id: "78",
-    question: "¿Cuál fue la primera impresión que tuviste de tu pareja?",
-    answers: "",
-    color: "#293462"
+    question: "¿Has tenido sexo en un sitio público?"
   },
   {
     id: "79",
-    question: "Has quedado en embarazo o has embarazado a alguien?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué cosas sucias te gusta que te digan durante el sexo?"
   },
   {
     id: "80",
-    question: "¿Qué es lo más atractivo de tu novio / novia?",
-    answers: "",
-    color: "#293462"
+    question: "¿Harías un 69?"
   },
   {
     id: "81",
-    question: "¿Qué harías si tu pareja acaba la relación en este momento?",
-    answers: "",
-    color: "#293462"
+    question: "¿Tendrías sexo con alguien al que acabas de conocer?"
   },
   {
     id: "82",
-    question: "¿Qué palabras que no son subidas de tono te excitan?",
-    answers: "",
-    color: "#293462"
+    question: "¿Qué palabras que son subidas de tono te excitan?"
   }
 ];
 
@@ -645,7 +482,7 @@ export default class App extends React.Component {
     });
   };
   GenerateRandomNumberDrink = () => {
-    var RandomNumber = Math.floor(Math.random() * (5 - 0)) + 1;
+    var RandomNumber = Math.floor(Math.random() * (3 - 0)) + 1;
     this.setState({
       currentIndexDrink: RandomNumber
     });

@@ -17,379 +17,270 @@ import { Overlay, Icon, Button } from "react-native-elements";
 const Users = [
   {
     id: "0",
-    question: "Yo nunca nunca he",
-    answers: "",
-    color: "#293462"
+    question: ""
   },
   {
     id: "1",
-    question: "Los que tengan el celular en la mesa tomaran ",
-    answers: "",
-    color: "#293462"
+    question: "Los que tengan el celular en la mesa tomaran "
   },
   {
     id: "2",
-    question: "Todos los que tengan Novia/o tomaran ",
-    space: " ",
-    answers: "",
-    color: "#293462"
+    question: "Todos los que tengan Novia/o tomaran "
   },
   {
     id: "3",
-    question: "La primera persona que encuentre un objeto Negro reparte ",
-    answers: "",
-    color: "#293462"
+    question: "La primera persona que encuentre un objeto Negro reparte "
   },
   {
     id: "4",
-    question: "Los que estan bebiendo Tequila, Vodka, Whiskey o Ron tomaran",
-    answers: "",
-    color: "#293462"
+    question: "Los que estan bebiendo Tequila, Vodka, Whiskey o Ron tomaran"
   },
   {
     id: "5",
-    question: "Si has falsificado una firma bebe ",
-    answers: "",
-    color: "#293462"
+    question: "Si has falsificado una firma bebe "
   },
-  { id: "6", question: "Yo nunca nunca he", answers: "", color: "#7c0a02" },
+  {
+    id: "6",
+    question:
+      "Obliguen a un amigo a que le mande un mensaje a su ex o el tomara"
+  },
   {
     id: "7",
-    question: "Todos tomense una selfie o tomen ",
-    answers: "",
-    color: "#f7b71d"
+    question: "Todos tomense una selfie o tomen "
   },
   {
     id: "8",
-    question: "Elegir a la persona más inteligente y tendra que beber ",
-    answers: "",
-    color: "#293462"
+    question: "Elegir a la persona más inteligente y tendra que beber "
   },
   {
     id: "9",
     question:
-      "Cada uno adpta el nombre de la persona a su derecha, el que se equivoque bebe ",
-    answers: "",
-    color: "#293462"
+      "Cada uno adpta el nombre de la persona a su derecha, el que se equivoque bebe "
   },
   {
     id: "10",
-    question: "Todos los que hayan perdido un telefono móvil, beban ",
-    answers: "",
-    color: "#293462"
+    question: "Todos los que hayan perdido un telefono móvil, beban "
   },
   {
     id: "11",
-    question: "Canciones de MANA, los que repitan las canciones, beban ",
-    answers: "",
-    color: "#293462"
+    question: "Canciones de MANA, los que repitan las canciones, beban "
   },
   {
     id: "12",
     question:
-      "Caricachupas presenta nombres de Marcas de cerveza, si se equivocan beban",
-    answers: "",
-    color: "#420000"
+      "Caricachupas presenta nombres de Marcas de cerveza, si se equivocan beban"
   },
   {
     id: "13",
-    question: "Todos los que tengan telefono Android, beban",
-    answers: "",
-    color: "#293462"
+    question: "Todos los que tengan telefono Android, beban"
   },
   {
     id: "14",
-    question: "Los que tengan tenis tendran que beber",
-    answers: "",
-    color: "#293462"
+    question: "Los que tengan tenis tendran que beber"
   },
   {
     id: "15",
-    question: "Todos los hijos unicos beban ",
-    answers: "",
-    color: "#293462"
+    question: "Todos los hijos unicos beban "
   },
-  { id: "16", question: "Yo nunca nunca he", answers: "", color: "#7c0a02" },
+  { id: "16", question: "Juega 'yo nunca nunca', el que este en minoria beba" },
   {
     id: "17",
-    question: "Si mañana tienes que ir a la escuela bebe ",
-    answers: "",
-    color: "#293462"
+    question: "Si mañana tienes que ir a la escuela bebe "
   },
   {
     id: "18",
-    question: "Los que estaban borrachos ayer, beban ",
-    answers: "",
-    color: "#293462"
+    question: "Los que estaban borrachos ayer, beban "
   },
-  { id: "19", question: "¡TOMAN TODOS!", answers: "", color: "#f7b71d" },
+  {
+    id: "19",
+    question: "Los que hoy tengan una prenda o accesorio negro beban"
+  },
   {
     id: "20",
     question:
-      "¿Que prefieres, clima frio o caliente?, la mayoria tendra que beber ",
-    answers: "",
-    color: "#293462"
+      "¿Que prefieres, clima frio o caliente?, los que esten en mayoria tendra que beber "
   },
   {
     id: "21",
-    question: "Si nunca has visto una pelicula de Marvel, Reparte ",
-    answers: "",
-    color: "#293462"
+    question: "Si nunca has visto una pelicula de Marvel, Bebe "
   },
   {
     id: "22",
     question:
-      "Todo el mundo elije entre Tacos o Pizza, quienes esten en minoria tomaran",
-    answers: "",
-    color: "#293462"
+      "Todo el mundo elije entre Tacos o Pizza, quienes esten en minoria tomaran"
   },
   {
     id: "23",
-    question: "Los que sean fan de los Vengadores que se beban ",
-    answers: "",
-    color: "#293462"
+    question: "Los que sean fan de los Vengadores que se beban "
   },
   {
     id: "24",
-    question: "Si alguna vez has tenido sexo con alguien mayor de edad bebe ",
-    answers: "",
-    color: "#293462"
+    question: "Si alguna vez has tenido sexo con alguien mayor de edad bebe "
   },
   {
     id: "25",
-    question: "Los que esten tomando cerveza, beban ",
-    answers: "",
-    color: "#293462"
+    question: "Los que esten tomando cerveza, beban "
   },
   {
     id: "26",
-    question: "Los jugadores con las copas menos llenas beban",
-    answers: "",
-    color: "#293462"
+    question: "Los jugadores con las copas menos llenas beban"
   },
   {
     id: "27",
-    question: "Caricachupas presenta nombres de Marcas de Cigarros ",
-    answers: "",
-    color: "#420000"
+    question: "Caricachupas presenta nombres de Marcas de Cigarros "
   },
   {
     id: "28",
     question:
-      "Reta a quién quieras a una guerra de pulgares, el que pierda tendra que beber",
-    answers: "",
-    color: "#293462"
+      "Reta a quién quieras a una guerra de pulgares, el que pierda tendra que beber"
   },
   {
     id: "29",
     question:
-      "Elije una palabra, la primera persona que cante el principio de una canción que contenga la canción, reparte ",
-    answers: "",
-    color: "#293462"
+      "Elije una palabra, la primera persona que cante el principio de una canción que contenga la canción, reparte "
   },
   {
     id: "30",
-    question: "El que tenga menos cabello bebe ",
-    answers: "",
-    color: "#293462"
+    question: "El que tenga menos cabello bebe "
   },
   {
     id: "31",
-    question: "Elegir a los mas carismaticos y repartir 2 tragos",
-    answers: "",
-    color: "#293462"
+    question: "Elegir a los mas carismaticos y repartir 2 tragos"
   },
 
   {
     id: "32",
-    question: "Si la persona que te gusta esta en este momento, bebe",
-    answers: "",
-    color: "#7c0a02"
+    question: "Si la persona que te gusta esta en este momento, bebe"
   },
   {
     id: "33",
-    question: "Todos los que hayan llegado tarde beban",
-    answers: "",
-    color: "#7c0a02"
+    question: "Todos los que hayan llegado tarde beban"
   },
   {
     id: "34",
-    question: "Los que hoy no se hayan bañado beban ",
-    answers: "",
-    color: "#293462"
+    question: "Los que hoy no se hayan bañado beban "
   },
   {
     id: "35",
-    question: "Los que lleguen a tocarse la naris con la lengua reparten",
-    answers: "",
-    color: "#293462"
+    question: "Los que lleguen a tocarse la naris con la lengua reparten"
   },
   {
     id: "36",
-    question: "Los que estan fumando ahora mismo beban 2",
-    answers: "",
-    color: "#293462"
+    question: "Los que estan fumando ahora mismo beban 2"
   },
   {
     id: "37",
-    question: "El jugador mas alto reparte ",
-    answers: "",
-    color: "#293462"
+    question: "El jugador mas alto reparte "
   },
   {
     id: "38",
-    question: "TIENES EL HUANTELETE DEL INFINITO!, Reparte ",
-    answers: "",
-    color: "#293462"
+    question: "TIENES EL HUANTELETE DEL INFINITO!, Reparte "
   },
   {
     id: "39",
-    question: "La persona que encuetre al jugador mas joven reparte ",
-    answers: "",
-    color: "#293462"
+    question: "La persona que encuetre al jugador mas joven reparte "
   },
 
   {
     id: "40",
-    question: "Elegir a la persona más desafortunada para el amor y darle ",
-    answers: "",
-    color: "#293462"
+    question: "Elegir a la persona más desafortunada para el amor y darle "
   },
   {
     id: "41",
     question:
-      "Trata de decir los números del uno al diez en cualquier otro idioma o decir el abecedario al revés, si no puedes bebes ",
-    answers: "",
-    color: "#293462"
+      "Trata de decir los números del uno al diez en cualquier otro idioma o decir el abecedario al revés, si no puedes bebes "
   },
   {
     id: "42",
     question:
-      "Nombres de canciones que comiencen con la letra G, quien se equivoque bebe",
-    answers: "",
-    color: "#293462"
+      "Nombres de canciones que comiencen con la letra G, quien se equivoque bebe"
   },
-  { id: "43", question: "Yo nunca nunca he", answers: "", color: "#7c0a02" },
+  {
+    id: "43",
+    question: "Yo nunca nunca he"
+  },
   {
     id: "44",
     question:
-      "FONDO para el ultimo que haya llegado el dia de hoy y este mismo reparte",
-    answers: "",
-    color: "#293462"
+      "FONDO para el ultimo que haya llegado el dia de hoy y este mismo reparte"
   },
   {
     id: "45",
-    question: "TODOS LOS HOMBRES BEBEN",
-    answers: "",
-    color: "#f7b71d"
+    question: "TODOS LOS HOMBRES BEBEN"
   },
   {
     id: "46",
     question:
-      "Caricachupas presenta nombres de Marcas de Cigarros quien se equivoque bebe",
-    answers: "",
-    color: "#420000"
+      "Caricachupas presenta nombres de Marcas de Cigarros quien se equivoque bebe"
   },
   {
     id: "47",
-    question: "La persona más guapa reparte",
-    answers: "",
-    color: "#293462"
+    question: "La persona más guapa reparte"
   },
   {
     id: "48",
-    question: "La primera persona que saque un condón reparte ",
-    answers: "",
-    color: "#293462"
+    question: "La primera persona que saque un condón reparte "
   },
   {
     id: "49",
-    question: "Elegir al jugador más tonto y repartir ",
-    answers: "",
-    color: "#293462"
+    question: "Elegir al jugador más tonto y repartir "
   },
   {
     id: "50",
-    question: "La persona más lista puede repartir",
-    answers: "",
-    color: "#293462"
+    question: "La persona más lista puede repartir"
   },
   {
     id: "51",
     question:
-      "¿Qué prefieres, Pepsi o Coca-Cola? los que esten en minoria beberan",
-    answers: "",
-    color: "#293462"
+      "¿Qué prefieres, Pepsi o Coca-Cola? los que esten en minoria beberan"
   },
   {
     id: "52",
     question:
-      "¿Qué prefieres, Hot-dog o Hamburguesa? los que esten en minoria beberan",
-    answers: "",
-    color: "#7c0a02"
+      "¿Qué prefieres, Hot-dog o Hamburguesa? los que esten en minoria beberan"
   },
   {
     id: "53",
-    question: "Toman todos los que tengan un Iphone beberan ",
-    answers: "",
-    color: "#293462"
+    question: "Toman todos los que tengan un Iphone beberan "
   },
   {
     id: "54",
-    question: "Si la ultima pelicula que hayas visto ha sido romantica bebe ",
-    answers: "",
-    color: "#293462"
+    question: "Si la ultima pelicula que hayas visto ha sido romantica bebe "
   },
   {
     id: "55",
     question:
-      "Caricachupas presenta nombres de Nombres de canciones de Juleta Venegas quien se equivoque o repita, bebe",
-    answers: "",
-    color: "#420000"
+      "Caricachupas presenta nombres de Nombres de canciones de Juleta Venegas quien se equivoque o repita, bebe"
   },
   {
     id: "56",
-    question: "Confiesa algo que te haya pasado en la cama, sino bebe",
-    answers: "",
-    color: "#293462"
+    question: "Confiesa algo que te haya pasado en la cama, sino bebe"
   },
   {
     id: "57",
-    question: "La persona que tenga el mejor cuerpo, y tendra que beber ",
-    answers: "",
-    color: "#293462"
+    question: "La persona que tenga el mejor cuerpo, y tendra que beber "
   },
   {
     id: "58",
-    question: "Los que esten bebiendo tequila tomaran ",
-    answers: "",
-    color: "#293462"
+    question: "Los que esten bebiendo tequila tomaran "
   },
   {
     id: "59",
     question:
-      "Elije a la persona que duerma más que todos, esta tendra que beber",
-    answers: "",
-    color: "#293462"
+      "Elije a la persona que duerma más que todos, esta tendra que beber"
   },
   {
     id: "60",
     question:
-      "Nombra cosas que se llevan de vacaciones, el que se repita que beba ",
-    answers: "",
-    color: "#293462"
+      "Nombra cosas que se llevan de vacaciones, el que se repita que beba "
   },
   {
     id: "61",
-    question: "Caricachupas presenta nombres de Redes sociales ",
-    answers: "",
-    color: "#420000"
+    question: "Caricachupas presenta nombres de Redes sociales "
   },
   {
     id: "62",
-    question: "Bebe un trago si estas soltero, Si tienes pareja bebe ",
-    answers: "",
-    color: "#293462"
+    question: "Bebe un trago si estas soltero, Si tienes pareja bebe "
   },
   {
     id: "63",
@@ -398,15 +289,11 @@ const Users = [
   },
   {
     id: "64",
-    question: "Propon una Palabra Prohibida quien la diga, beberan ",
-    answers: "",
-    color: "#293462"
+    question: "Propon una Palabra Prohibida quien la diga, beberan "
   },
   {
     id: "65",
-    question: "Al que menos este tomando repartan le ",
-    answers: "",
-    color: "#293462"
+    question: "Al que menos este tomando repartan le "
   }
 ];
 
@@ -526,7 +413,7 @@ export default class App extends React.Component {
     });
   };
   GenerateRandomNumberDrink = () => {
-    var RandomNumber = Math.floor(Math.random() * (5 - 0)) + 1;
+    var RandomNumber = Math.floor(Math.random() * (3 - 0)) + 1;
     this.setState({
       currentIndexDrink: RandomNumber
     });

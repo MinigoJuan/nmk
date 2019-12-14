@@ -64,16 +64,16 @@ export class Category extends Component {
                 caption="Diviertete estudiando y poniendo bebiendo con tus amigos, Hay preguntas de toda materia, Derecho, Español, Matematicas, Ingles, ETC."
               ></Tile>
             </TouchableOpacity>
-            {/* <TouchableOpacity key={4}>
+            <TouchableOpacity key={4}>
               <Tile
-                onPress={() => this.props.navigation.navigate("TeamvsTeam")}
+                onPress={() => this.props.navigation.navigate("Adivina")}
                 containerStyle={styles.Tilestyle}
-                imageSrc={require("../../assets/imagesofCategories/team.png")}
-                title="Modo Team vs Team"
+                imageSrc={require("../../assets/imagesofCategories/adivina.jpg")}
+                title="Adivina el personaje"
                 featured
-                caption="Entrentate con tus amigos en Team vs Team y demuestra quien es el Team que manda."
+                caption="Juega con tus amigos a adivinar el personaje aleatorio, hazlo con mimica o imitando al personaje el castigo nosotros lo ponemos."
               ></Tile>
-            </TouchableOpacity> */}
+            </TouchableOpacity>
           </View>
           <Button
             onPress={() => this.props.navigation.goBack()}

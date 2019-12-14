@@ -884,7 +884,7 @@ export default class App extends React.Component {
     });
   };
   GenerateRandomNumberDrink = () => {
-    var RandomNumber = Math.floor(Math.random() * (5 - 0)) + 1;
+    var RandomNumber = Math.floor(Math.random() * (2 - 0)) + 1;
     this.setState({
       currentIndexDrink: RandomNumber
     });

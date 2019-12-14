@@ -45,577 +45,483 @@ const Users = [
   {
     id: "5",
     question: "¿En qué continente está Ecuador?",
-    answers: "América",
-    color: "#293462"
+    answers: "América"
   },
   {
     id: "6",
     question: "¿Dónde originaron los juegos olímpicos?",
-    answers: "Se originaron en Grecia",
-    color: "#293462"
+    answers: "Se originaron en Grecia"
   },
   {
     id: "7",
     question: "¿Qué tipo de animal es la ballena?",
-    answers: "a ballena es un mamífero marino",
-    color: "#293462"
+    answers: "a ballena es un mamífero marino"
   },
   {
     id: "8",
     question: "¿De qué colores es la bandera de México? ",
-    answers: "verde, blanco y rojo.",
-    color: "#293462"
+    answers: "verde, blanco y rojo."
   },
   {
     id: "9",
     question: "¿Qué cantidad de huesos en el cuerpo humano?",
-    answers: "Un adulto tiene 206",
-    color: "#293462"
+    answers: "Un adulto tiene 206"
   },
   {
     id: "10",
     question: "¿Cuándo acabó la II Guerra Mundial?",
-    answers: "La II Guerra Mundial finalizó en 1945.",
-    color: "#293462"
+    answers: "La II Guerra Mundial finalizó en 1945."
   },
   {
     id: "11",
     question: "¿Quién es el autor de el Quijote?",
-    answers: "Miguel de Cervantes.",
-    color: "#293462"
+    answers: "Miguel de Cervantes."
   },
   {
     id: "12",
     question: "¿Quién pintó “la última cena”?",
-    answers: "Leonardo da Vinci.",
-    color: "#293462"
+    answers: "Leonardo da Vinci."
   },
   {
     id: "13",
     question: " ¿En qué país se encuentra la torre de Pisa?",
-    answers: "Italia.",
-    color: "#293462"
+    answers: "Italia."
   },
   {
     id: "14",
     question: "¿Qué son los humanos: omnívoros, herbívoros o carnívoros?",
-    answers: "Los humanos somos omnívoros",
-    color: "#293462"
+    answers: "Los humanos somos omnívoros"
   },
   {
     id: "15",
     question: "¿Cómo se denomina el resultado de la multiplicación?",
-    answers: "El resultado de la multiplicación se llama producto.",
-    color: "#293462"
+    answers: "El resultado de la multiplicación se llama producto."
   },
   {
     id: "16",
     question: "¿Cuál es el océano más grande?",
-    answers: "El Océano Pacífico",
-    color: "#293462"
+    answers: "El Océano Pacífico"
   },
   {
     id: "17",
     question: "¿Qué año llegó Cristóbal Colón a América? ",
-    answers: "Cristóbal Colón llegó a América es en 1492.",
-    color: "#293462"
+    answers: "Cristóbal Colón llegó a América es en 1492."
   },
   {
     id: "18",
     question: "¿Quién es el padre del psicoanálisis?",
-    answers: "Sigmund Freud",
-    color: "#293462"
+    answers: "Sigmund Freud"
   },
   {
     id: "19",
     question: "¿Cuál es el disco más vendido de la historia?",
-    answers: "Thriller, de Michael Jackson",
-    color: "#293462"
+    answers: "Thriller, de Michael Jackson"
   },
   {
     id: "20",
     question: "¿Quién es el famoso Rey de Rock en los Estados Unidos?",
-    answers: "Elvis Presley",
-    color: "#293462"
+    answers: "Elvis Presley"
   },
   {
     id: "21",
     question: "¿Cómo se llama el nuevo presidente de los Estados Unidos?",
-    answers: "Donald Trump.",
-    color: "#293462"
+    answers: "Donald Trump."
   },
   {
     id: "22",
     question: "¿Qué significa FIFA?",
-    answers: "Fédération Internationale de Football Association.",
-    color: "#293462"
+    answers: "Fédération Internationale de Football Association."
   },
   {
     id: "23",
     question: "¿En qué se especializa la cartografía?",
-    answers: "Es la ciencia que estudia los mapas.",
-    color: "#293462"
+    answers: "Es la ciencia que estudia los mapas."
   },
   {
     id: "24",
     question: "¿Cuál es el país más grande del mundo?",
-    answers: "Rusia",
-    color: "#293462"
+    answers: "Rusia"
   },
   {
     id: "25",
     question: " ¿Dónde se encuentra la famosa Torre Eiffel?",
-    answers: "París, Francia.",
-    color: "#293462"
+    answers: "París, Francia."
   },
   {
     id: "26",
     question: "¿Qué deporte practicaba Michael Jordan?",
-    answers: "Baloncesto",
-    color: "#293462"
+    answers: "Baloncesto"
   },
   {
     id: "27",
     question: "¿En qué año comenzó la II Guerra Mundial?",
-    answers: "1939",
-    color: "#293462"
+    answers: "1939"
   },
   {
     id: "28",
     question: "Si 50 es el 100%, ¿cuánto es el 90%?",
-    answers: "El resultado de esta regla de tres es 45.",
-    color: "#293462"
+    answers: "El resultado de esta regla de tres es 45."
   },
   {
     id: "29",
     question: "¿Cuál es tercer planeta en el sistema solar?",
-    answers: "La Tierra.",
-    color: "#293462"
+    answers: "La Tierra."
   },
   {
     id: "30",
     question: "¿Qué país tiene forma de bota?",
-    answers: "Italia",
-    color: "#293462"
+    answers: "Italia"
   },
   {
     id: "31",
     question: "¿Cuál es la moneda del Reino Unido?",
-    answers: "La libra ",
-    color: "#293462"
+    answers: "La libra "
   },
   {
     id: "32",
     question: "¿Cual es país más poblado de la Tierra?",
-    answers: "China con 1.383.488.571",
-    color: "#293462"
+    answers: "China con 1.383.488.571"
   },
   {
     id: "34",
     question: "¿En qué lugar del cuerpo se produce la insulina?",
-    answers: "En el páncreas",
-    color: "#293462"
+    answers: "En el páncreas"
   },
   {
     id: "35",
     question: "¿Qué rama de la Biología estudia los animales?",
-    answers: "La zoología",
-    color: "#293462"
+    answers: "La zoología"
   },
   {
     id: "36",
     question: "¿Cuál es el área del arte protagonista en los premios Grammy?",
     answers:
-      "Se entregan como reconocimiento a los mejores músicos de cada año.",
-    color: "#293462"
+      "Se entregan como reconocimiento a los mejores músicos de cada año."
   },
   {
     id: "37",
     question: "¿Cómo se llama el himno nacional de Francia?",
-    answers: "La Marsellesa.",
-    color: "#293462"
+    answers: "La Marsellesa."
   },
   {
     id: "38",
     question:
       "¿De qué estilo arquitectónico es la Catedral de Notre Dame en París?",
-    answers: "Gótico",
-    color: "#293462"
+    answers: "Gótico"
   },
   {
     id: "39",
     question: "¿Con qué se fabricaba el pergamino?",
-    answers: "piel de animales.",
-    color: "#293462"
+    answers: "piel de animales."
   },
 
   {
     id: "40",
     question: "¿Cuántas patas tiene la araña?",
-    answers: "8",
-    color: "#293462"
+    answers: "8"
   },
   {
     id: "41",
     question: "¿Cómo se llama el animal más rápido del mundo?",
-    answers: "Guepardo",
-    color: "#293462"
+    answers: "Guepardo"
   },
   {
     id: "42",
     question: "¿Cuál es la ciudad de los rascacielos?",
-    answers: "Nueva York",
-    color: "#293462"
+    answers: "Nueva York"
   },
   {
     id: "43",
     question: "¿De qué país es el futbolista Zlatan Ibrahimović?",
-    answers: "Sueco.",
-    color: "#293462"
+    answers: "Sueco."
   },
   {
     id: "44",
     question: "¿A qué país pertenecen los cariocas?",
-    answers: "Brasil",
-    color: "#293462"
+    answers: "Brasil"
   },
   {
     id: "45",
     question: "¿En qué país se encuentra el famoso monumento Taj Mahal?",
-    answers: "India",
-    color: "#293462"
+    answers: "India"
   },
   {
     id: "46",
     question: "¿Cuál es el nombre de la lengua oficial en china?",
-    answers: "Mandarín",
-    color: "#293462"
+    answers: "Mandarín"
   },
   {
     id: "47",
     question: "¿Quién va a la cárcel: el imputado, el acusado, el condenado?",
-    answers: "La persona que va a la cárcel es el condenado",
-    color: "#293462"
+    answers: "La persona que va a la cárcel es el condenado"
   },
   {
     id: "48",
     question:
       "¿Quién era el general de los nazis en la Segunda Guerra Mundial?",
-    answers: "Adolf Hitler",
-    color: "#293462"
+    answers: "Adolf Hitler"
   },
   {
     id: "49",
     question: "¿Cómo le llaman a los textos de autores desconocidos?",
-    answers: "Anónimo.",
-    color: "#293462"
+    answers: "Anónimo."
   },
   {
     id: "50",
     question: "¿Cuál fue el primer metal que empleó el hombre?",
-    answers: "El cobre.",
-    color: "#293462"
+    answers: "El cobre."
   },
   {
     id: "51",
     question: "¿Qué instrumento óptico permite ver los astros de cerca?",
-    answers: "Telescopio",
-    color: "#293462"
+    answers: "Telescopio"
   },
   {
     id: "52",
     question: "Cuál es el área del arte protagonista en los Premios Óscar?",
     answers:
-      "Películas, actores, directores y, en general, a figuras del mundo del cine.",
-    color: "#293462"
+      "Películas, actores, directores y, en general, a figuras del mundo del cine."
   },
   {
     id: "53",
     question: "¿Cuál es el primero de la lista de los números primos?",
-    answers: "2",
-    color: "#293462"
+    answers: "2"
   },
   {
     id: "54",
     question: "¿Cuál es el único mamífero capaz de volar?",
-    answers: "El murciélago ",
-    color: "#293462"
+    answers: "El murciélago "
   },
   {
     id: "55",
     question: "¿Cuál es el libro sagrado del Islam?",
-    answers: "El corán",
-    color: "#293462"
+    answers: "El corán"
   },
   {
     id: "56",
     question: "¿Qué es más pequeño, un átomo o una molécula?",
-    answers: "Un átomo tiene menores dimensiones que una molécula",
-    color: "#293462"
+    answers: "Un átomo tiene menores dimensiones que una molécula"
   },
   {
     id: "57",
     question: "¿Qué era el Concorde?",
-    answers: "Un avión supersónico utilizado para transportar a viajeros.",
-    color: "#293462"
+    answers: "Un avión supersónico utilizado para transportar a viajeros."
   },
   {
     id: "58",
     question: "¿Quién ganó el mundial de 2014?",
-    answers: "Alemania",
-    color: "#293462"
+    answers: "Alemania"
   },
   {
     id: "59",
     question: "¿Quién escribió “Hamlet”?",
-    answers: "William Shakespeare",
-    color: "#293462"
+    answers: "William Shakespeare"
   },
   {
     id: "60",
     question: "¿Cuál es la moneda oficial de Estados Unidos?",
-    answers: "En Estados Unidos se utiliza el Dólar",
-    color: "#293462"
+    answers: "En Estados Unidos se utiliza el Dólar"
   },
   {
     id: "61",
     question: "¿A qué país pertenece la ciudad de Varsovia?",
-    answers: "Polonia ",
-    color: "#293462"
+    answers: "Polonia "
   },
   {
     id: "62",
     question: "¿Cuál es la nacionalidad de Pablo Neruda?",
-    answers: "Chileno",
-    color: "#293462"
+    answers: "Chileno"
   },
   {
     id: "63",
     question: "¿A quién le crecía la nariz cuando mentía?",
-    answers: "Pinocho",
-    color: "#293462"
+    answers: "Pinocho"
   },
   {
     id: "64",
     question: "¿Quién traicionó a Jesús?",
-    answers: "Judas ",
-    color: "#293462"
+    answers: "Judas "
   },
   {
     id: "65",
     question: "¿De qué estado fue emperador Napoleón Bonaparte?",
-    answers: "Napoleón ",
-    color: "#293462"
+    answers: "Napoleón "
   },
   {
     id: "66",
     question:
       "¿Cómo se llama el proceso por el cual las plantas obtienen alimento?",
-    answers: "Fotosíntesis",
-    color: "#293462"
+    answers: "Fotosíntesis"
   },
   {
     id: "67",
     question: "¿Cómo se llama la energía contenida en el núcleo de los átomos?",
-    answers: "Energía nuclear.",
-    color: "#293462"
+    answers: "Energía nuclear."
   },
   {
     id: "68",
     question: "¿Dónde está la Casa Blanca?",
-    answers: "Washington D.C. Estados Unidos",
-    color: "#293462"
+    answers: "Washington D.C. Estados Unidos"
   },
   {
     id: "69",
     question: "¿De qué está recubierto el cuerpo de los peces?",
-    answers: "Las escamas",
-    color: "#293462"
+    answers: "Las escamas"
   },
   {
     id: "70",
     question: "¿Cuánto vale el número pi?",
-    answers: "3,1416.",
-    color: "#293462"
+    answers: "3,1416."
   },
   {
     id: "71",
     question: "¿Cuál es la capital de Croacia?",
-    answers: "Zagreb",
-    color: "#293462"
+    answers: "Zagreb"
   },
   {
     id: "72",
     question: "El triángulo que tiene sus tres lados iguales ¿Cómo se llama?",
-    answers: "Triángulo equilátero",
-    color: "#293462"
+    answers: "Triángulo equilátero"
   },
   {
     id: "73",
     question: "¿Cuáles son las notas musicales?",
-    answers: "Do, re, mi, fa, sol, la, si.",
-    color: "#293462"
+    answers: "Do, re, mi, fa, sol, la, si."
   },
   {
     id: "74",
     question: "¿Cuál es la capital de Dinamarca?",
-    answers: "Copenhague",
-    color: "#293462"
+    answers: "Copenhague"
   },
   {
     id: "75",
     question: "¿Quién es el protagonista de la película “Rocky”?",
-    answers: "Sylvester Stallone",
-    color: "#293462"
+    answers: "Sylvester Stallone"
   },
   {
     id: "76",
     question: "¿De qué lengua proviene el español?",
-    answers: "El castellano es una lengua que proviene del latín.",
-    color: "#293462"
+    answers: "El castellano es una lengua que proviene del latín."
   },
   {
     id: "77",
     question: "¿En qué país se usó la primera bomba atómica en combate?",
-    answers: "Hiroshima",
-    color: "#293462"
+    answers: "Hiroshima"
   },
   {
     id: "78",
     question: "¿Cuál es el metal más caro del mundo?",
     answers:
-      "Aunque algunos piensen que es el oro o el platino, en realidad es el rodio.",
-    color: "#293462"
+      "Aunque algunos piensen que es el oro o el platino, en realidad es el rodio."
   },
   {
     id: "79",
     question: "¿Cuántos años tiene un lustro?",
-    answers: "5 años.",
-    color: "#293462"
+    answers: "5 años."
   },
   {
     id: "80",
     question: "¿Qué es más grande un átomo o una célula?",
-    answers: "Una célula tiene mayores dimensiones que un átomo.",
-    color: "#293462"
+    answers: "Una célula tiene mayores dimensiones que un átomo."
   },
   {
     id: "81",
     question: "¿Dónde se encuentra la capa de ozono?",
-    answers: "En la atmósfera.",
-    color: "#293462"
+    answers: "En la atmósfera."
   },
   {
     id: "82",
     question: "¿Quién “sabía que no sabía nada”?",
     answers:
-      " se atribuye a Sócrates, pero fue Platón quien la recogió por primera vez",
-    color: "#293462"
+      " se atribuye a Sócrates, pero fue Platón quien la recogió por primera vez"
   },
   {
     id: "83",
     question: "¿Qué es un ovíparo?",
-    answers: "Un ovíparo es un un animal que nace de un huevo.",
-    color: "#293462"
+    answers: "Un ovíparo es un un animal que nace de un huevo."
   },
   {
     id: "84",
     question: "¿Cuál es la capital de Francia?",
-    answers: "París",
-    color: "#293462"
+    answers: "París"
   },
   {
     id: "85",
     question: "¿Cuándo empezó la Primera Guerra Mundial?",
-    answers: "1914",
-    color: "#293462"
+    answers: "1914"
   },
   {
     id: "86",
     question: "¿Qué deporte practica profesionalmente Roger Federer?",
-    answers: "Tenis ",
-    color: "#293462"
+    answers: "Tenis "
   },
   {
     id: "87",
     question: " ¿Qué es un animal carnívoro?",
-    answers: "Carnívoro es aquel animal que come carne.",
-    color: "#293462"
+    answers: "Carnívoro es aquel animal que come carne."
   },
   {
     id: "88",
     question: "¿Cómo se llama el procedimiento de subir la bandera?",
-    answers: "Izar.",
-    color: "#293462"
+    answers: "Izar."
   },
   {
     id: "89",
     question: "¿Cómo se llama el estadio del F.C. Barcelona?",
-    answers: "Camp Nou",
-    color: "#293462"
+    answers: "Camp Nou"
   },
   {
     id: "90",
     question: "¿Cómo se llama el fundador de Facebook?",
-    answers: "Mark Zuckerberg",
-    color: "#293462"
+    answers: "Mark Zuckerberg"
   },
   {
     id: "91",
     question: "¿Cómo se llama el pokemon amarillo de ash?",
-    answers: "Pikachu",
-    color: "#293462"
+    answers: "Pikachu"
   },
   {
     id: "92",
     question: "¿Cuál es el país con más camellos salvajes?",
-    answers: "Australia",
-    color: "#293462"
+    answers: "Australia"
   },
   {
     id: "93",
     question: "¿Cuántos corazones tienen los pulpos?",
-    answers: "3 corazones.",
-    color: "#293462"
+    answers: "3 corazones."
   },
   {
     id: "94",
     question: "¿Existen animales inmortales?",
     answers:
-      "Técnicamente sí: la medusa Turritopsis nutricula no muere a no ser que la maten o sufra un accidente.",
-    color: "#293462"
+      "Técnicamente sí: la medusa Turritopsis nutricula no muere a no ser que la maten o sufra un accidente."
   },
   {
     id: "95",
     question: "¿En qué ciudad ucraniana ocurrió un desastre nuclear?",
-    answers: "En Prípiat. Chernobyl",
-    color: "#293462"
+    answers: "En Prípiat. Chernobyl"
   },
   {
     id: "96",
     question:
       "¿Cómo se llama la civilización que construyó las pirámides de Giza?",
-    answers: "Los egipcios.",
-    color: "#293462"
+    answers: "Los egipcios."
   },
   {
     id: "97",
     question:
       "¿Cómo se llaman los protagonistas de la película “Titanic” de James Cameron?",
-    answers: "Jack Dawson y Rose DeWitt Bukater.",
-    color: "#293462"
+    answers: "Jack Dawson y Rose DeWitt Bukater."
   },
   {
     id: "98",
     question: "¿Cuál es el planeta más grande del Sistema Solar?",
-    answers: "Júpiter",
-    color: "#293462"
+    answers: "Júpiter"
   },
   {
     id: "99",
     question: "¿Cuál es el animal más grande que habita la Tierra?",
-    answers: "La ballena azul.",
-    color: "#293462"
+    answers: "La ballena azul."
   },
   {
     id: "100",
@@ -684,6 +590,78 @@ const Users = [
     id: "112",
     question: "¿Cuál es la rama de la biología que estudia las plantas?",
     answers: "Botánica."
+  },
+  {
+    id: "113",
+    question: "¿Cuáles son los cinco continentes?",
+    answers: "Europa, Asia, Oceanía, Antártida y América."
+  },
+  {
+    id: "114",
+    question: "¿Cuántos colores tiene el arcoíris?",
+    answers:
+      "Rojo, naranja, amarillo, verde, azul, añil y violeta. Los colores de los que se compone un rayo de luz."
+  },
+  {
+    id: "115",
+    question: "¿En qué año llegaron a la luna?",
+    answers: "1969."
+  },
+  {
+    id: "116",
+    question: "¿Qué animal mata más humanos al año?",
+    answers: "Curiosamente, el mosquito, a través del contagio de enfermedades."
+  },
+  {
+    id: "117",
+    question: "¿¿En qué año cayó el muro de Berlín?",
+    answers: "1989."
+  },
+  {
+    id: "118",
+    question: "¿Quién escribió ‘El Principito’?",
+    answers: "Antoine de Saint-Exupéry."
+  },
+  {
+    id: "119",
+    question: "¿Cuál fue la primera película de Disney?",
+    answers:
+      "El primer largometraje de la compañía vio la luz en 1937, y fue ‘Blancanieves’."
+  },
+  {
+    id: "120",
+    question: "¿Quien formuló la Teoría de la Relatividad?",
+    answers: "El físico alemán Albert Einstein."
+  },
+  {
+    id: "121",
+    question: "¿Y quién propuso las leyes del movimiento?",
+    answers: "Isaac Newton."
+  },
+  {
+    id: "122",
+    question: "¿Cuál es la película más taquillera de la historia?",
+    answers: "Vengadores: Endgame."
+  },
+  {
+    id: "123",
+    question: "¿En qué galaxia se encuentra la Tierra?",
+    answers: "En la Vía Láctea."
+  },
+  {
+    id: "124",
+    question: "¿A qué temperatura hierve el agua?",
+    answers: "A cien grados centígrados."
+  },
+  {
+    id: "125",
+    question: "¿Qué río pasa por Londres?",
+    answers: "El Támesis."
+  },
+  {
+    id: "126",
+    question: "¿Cuántas vocales hay en un diptongo?",
+    answers: "Dos."
   }
 ];
 
