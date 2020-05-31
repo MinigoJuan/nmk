@@ -23,7 +23,7 @@
     },
     "android": {
       "package": "com.minigocompany.MinigoApp",
-      "versionCode": 2
+      "versionCode": 3
     }
   }
 }

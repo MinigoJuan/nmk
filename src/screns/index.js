@@ -38,7 +38,7 @@ class index extends Component {
               {
                 text: "OK",
                 onPress: () => {
-                  Linking.openURL(`twitter://user?screen_name=minigoapp`);
+                  Linking.openURL("https://twitter.com/MinigoApp");
                 }
               },
               { text: "Cancelar", onPress: () => {}, style: "cancel" }
@@ -65,7 +65,9 @@ class index extends Component {
               {
                 text: "OK",
                 onPress: () => {
-                  Linking.openURL("instagram://user?username=minigoapp");
+                  Linking.openURL(
+                    "https://www.instagram.com/minigoapp/?hl=es-la"
+                  );
                 }
               },
               { text: "Cancelar", onPress: () => {}, style: "cancel" }
@@ -92,7 +94,9 @@ class index extends Component {
               {
                 text: "OK",
                 onPress: () => {
-                  Linking.openURL("fb://profile/109469397165034");
+                  Linking.openURL(
+                    "https://www.facebook.com/MinigoApp/?view_public_for=109469397165034"
+                  );
                 }
               },
               { text: "Cancelar", onPress: () => {}, style: "cancel" }
@@ -145,7 +149,9 @@ class index extends Component {
           ></Button>
         </View>
         <View>
-          <Text style={{ color: "#f9f6f7" }}>Enviarnos tus preguntas por:</Text>
+          <Text style={{ color: "#f9f6f7" }}>
+            Enviarnos tus aportaciones por:
+          </Text>
           <View style={styles.IconsView}>
             <SocialIcon light type="twitter" onPress={this._handleOpenURL} />
             <SocialIcon light type="instagram" onPress={this._handleOpenURLI} />

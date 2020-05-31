@@ -6,10 +6,11 @@ import { createStackNavigator } from "react-navigation-stack";
 import index from "../screns/index";
 import category from "../screns/Category";
 import CategoryStudent from "../screns/CategoryStudent";
+import addFriends from "../screns/UsersFriends";
 import QuitzFriends from "../Modes/quitzFriends";
 import QuitzHot from "../Modes/quitzHot";
 import QuitzShot from "../Modes/quitzShot";
-import Adivina from "../Modes/quitzAdivina";
+import Redes from "../screns/CategoryCreator";
 // questions mode student
 import QuitzAleatotio from "../Modes/ModesEstudent/quitzAleatorio";
 import QuitzDerecho from "../Modes/ModesEstudent/QuitzDerecho";
@@ -18,42 +19,46 @@ const HomeScreen = createStackNavigator(
   {
     Home: {
       screen: index,
-      navigationOptions: ({ navigation }) => ({})
+      navigationOptions: ({ navigation }) => ({}),
     },
     Category: {
       screen: category,
-      navigationOptions: ({ navigation }) => ({})
+      navigationOptions: ({ navigation }) => ({}),
     },
 
     CategoryStudent: {
       screen: CategoryStudent,
-      navigationOptions: ({ navigation }) => ({})
+      navigationOptions: ({ navigation }) => ({}),
     },
     QuitzFriends: {
       screen: QuitzFriends,
-      navigationOptions: ({ navigation }) => ({})
+      navigationOptions: ({ navigation }) => ({}),
     },
     QuitzHot: {
       screen: QuitzHot,
-      navigationOptions: ({ navigation }) => ({})
+      navigationOptions: ({ navigation }) => ({}),
     },
     QuitzShot: {
       screen: QuitzShot,
-      navigationOptions: ({ navigation }) => ({})
+      navigationOptions: ({ navigation }) => ({}),
     },
-    Adivina: {
-      screen: Adivina,
-      navigationOptions: ({ navigation }) => ({})
+    Redes: {
+      screen: Redes,
+      navigationOptions: ({ navigation }) => ({}),
+    },
+    addFriends: {
+      screen: addFriends,
+      navigationOptions: ({ navigation }) => ({}),
     },
     // ENCUESTAS DE ESTUDIANTE
     QuitzAleatotio: {
       screen: QuitzAleatotio,
-      navigationOptions: ({ navigation }) => ({})
+      navigationOptions: ({ navigation }) => ({}),
     },
     QuitzDerecho: {
       screen: QuitzDerecho,
-      navigationOptions: ({ navigation }) => ({})
-    }
+      navigationOptions: ({ navigation }) => ({}),
+    },
   },
   { initialRuteName: "Home", headerMode: "none" }
 );

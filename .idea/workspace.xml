@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ade723-ec41-45a8-a83a-b56bd58b3bcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modes/ModesEstudent/quitzAleatorio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modes/ModesEstudent/quitzAleatorio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modes/quitzFriends.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modes/quitzFriends.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modes/quitzHot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modes/quitzHot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modes/quitzShot.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modes/quitzShot.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modes/quitzAdivina.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modes/quitzAdivina.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navigations/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navigations/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screns/Category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screns/Category.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screns/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screns/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +29,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="820" />
   </component>
@@ -47,30 +46,13 @@
               <item name="nmk" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="nmk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Android API 29 Platform &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="nmk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Android API 29 Platform &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="android.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nmk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Android API 29 Platform &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -106,7 +88,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3336887" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.015991472" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />

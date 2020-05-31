@@ -4,7 +4,7 @@ import {
   View,
   StyleSheet,
   TouchableOpacity,
-  ScrollView
+  ScrollView,
 } from "react-native";
 import { Card, Button, Icon, Tile } from "react-native-elements";
 
@@ -20,24 +20,24 @@ export class Category extends Component {
           <View style={styles.stylefisrts}>
             <TouchableOpacity key={0}>
               <Tile
-                onPress={() => this.props.navigation.navigate("QuitzShot")}
+                onPress={() => this.props.navigation.navigate("addFriends")}
                 containerStyle={styles.Tilestyle}
-                imageSrc={require("../../assets/imagesofCategories/tequila.png")}
-                title="Verdad, Reto o Shot"
+                imageSrc={require("../../assets/imagesofCategories/photofriends.png")}
+                title="Modo amigos"
                 featured
-                caption="Llena de shots el ambiente de SHOT´S, todos tienen el poder de repartir shot´s a todo el mundo. "
+                caption="Juega cuando estes con tus amigos, en App Beer y diviertete poniendo retos a tus amigos en las fiestas."
               ></Tile>
             </TouchableOpacity>
           </View>
           <View>
             <TouchableOpacity key={1}>
               <Tile
-                onPress={() => this.props.navigation.navigate("QuitzFriends")}
+                onPress={() => this.props.navigation.navigate("QuitzShot")}
                 containerStyle={styles.Tilestyle}
-                imageSrc={require("../../assets/imagesofCategories/photofriends.png")}
-                title="Modo amigos"
+                imageSrc={require("../../assets/imagesofCategories/tequila.png")}
+                title="Verdad, Reto o Shot"
                 featured
-                caption="Juega cuando estes con tus amigos, en App Beer y diviertete poniendo retos a tus amigos en las fiestas."
+                caption="Llena de shots el ambiente de SHOT´S, todos tienen el poder de repartir shot´s a todo el mundo. "
               ></Tile>
             </TouchableOpacity>
             <View>
@@ -53,8 +53,8 @@ export class Category extends Component {
               </TouchableOpacity>
             </View>
           </View>
-          <View>
-            <TouchableOpacity key={3}>
+
+          {/* <TouchableOpacity key={3}>
               <Tile
                 onPress={() => this.props.navigation.push("CategoryStudent")}
                 containerStyle={styles.Tilestyle}
@@ -63,18 +63,19 @@ export class Category extends Component {
                 featured
                 caption="Diviertete estudiando y poniendo bebiendo con tus amigos, Hay preguntas de toda materia, Derecho, Español, Matematicas, Ingles, ETC."
               ></Tile>
-            </TouchableOpacity>
-            <TouchableOpacity key={4}>
+            </TouchableOpacity> */}
+
+          {/* <TouchableOpacity key={4}>
               <Tile
-                onPress={() => this.props.navigation.navigate("Adivina")}
+                onPress={() => this.props.navigation.navigate("Redes")}
                 containerStyle={styles.Tilestyle}
-                imageSrc={require("../../assets/imagesofCategories/adivina.jpg")}
-                title="Adivina el personaje"
+                imageSrc={require("../../assets/imagesofCategories/redes.jpg")}
+                title=""
                 featured
-                caption="Juega con tus amigos a adivinar el personaje aleatorio, hazlo con mimica o imitando al personaje el castigo nosotros lo ponemos."
+                caption=""
               ></Tile>
-            </TouchableOpacity>
-          </View>
+            </TouchableOpacity> */}
+
           <Button
             onPress={() => this.props.navigation.goBack()}
             buttonStyle={styles.BtnStyle}
@@ -97,10 +98,10 @@ export class Category extends Component {
 const styles = StyleSheet.create({
   configView: {
     flex: 1,
-    backgroundColor: "#19212E"
+    backgroundColor: "#19212E",
   },
   sroolss: {
-    marginBottom: 20
+    marginBottom: 20,
   },
   BtnStyle: {
     marginBottom: 15,
@@ -108,16 +109,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#da4302",
     marginLeft: 35,
     marginRight: 35,
-    borderRadius: 7
+    borderRadius: 7,
   },
   viewSeparated: {
-    flexDirection: "row"
+    flexDirection: "row",
   },
   Tilestyle: {
-    marginTop: 10
+    marginTop: 10,
   },
   stylefisrts: {
-    marginTop: 25
-  }
+    marginTop: 25,
+  },
 });
 export default Category;
