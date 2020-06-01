@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, Button, TextInput } from "react-native";
+import { View, Text, StyleSheet, TextInput, ScrollView } from "react-native";
+import { Icon, Button } from "react-native-elements";
 
 export default class App extends Component {
   constructor(props) {
@@ -31,38 +32,50 @@ export default class App extends Component {
 
   render() {
     return (
+      
       <View style={styles.container}>
-        <Text> Dinamic Input </Text>
+    
+        <Text style={styles.namePlayer}> Elije a los jugadores </Text>
         {this.state.nombres.map((nombre, index) => {
           return (
-            <View key={index}>
+            <View key={index} style={styles.containerInput}>
               <TextInput
                 onChange={(e) => this.handleChange(e.nativeEvent.text, index)}
                 value={nombre}
                 style={{
+                  color:"#f7f7f7",
                   height: 40,
-                  width: 160,
-                  borderColor: "gray",
-                  borderWidth: 1,
+                  width: 200,
+                  borderColor: "#ffcd3c",
+                  borderWidth: 2,
+                  borderRadius:15
+
                 }}
               ></TextInput>
-              <Button
-                title="Eliminar jugador"
-                onPress={() => this.removePlayer(index)}
-              ></Button>
+             
+              <Icon
+  raised
+  name='delete'
+  type='material-community'
+  color='#f50'
+  onPress={() => this.removePlayer(index)} />
             </View>
           );
         })}
         <Button
-          title="Agregar jugador"
+        buttonStyle={styles.containerButton}
+          title="Agregar jugador"s
           onPress={(e) => this.addNombre(e)}
+
         ></Button>
 
-        <Text>---------------- </Text>
+       
         <Button
-          title="Continuar"
+          title="A jugar!"
           onPress={(e) => this.handleSubmit(e)}
+          buttonStyle={styles.containerButton}
         ></Button>
+    
       </View>
     );
   }
@@ -75,4 +88,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  namePlayer:{
+    color: "#f6cd61",
+    fontSize: 24,
+    marginBottom:5
+  },
+  containerInput:  {
+    flexDirection:"row",
+    alignItems:"center"
+  },
+  containerButton:{
+    width:'90%',
+    height:40
+    ,backgroundColor:'#f6cd61',borderRadius:15, marginTop:8, marginBottom:5
+  }
 });
