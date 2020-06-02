@@ -8,7 +8,6 @@ export default class App extends Component {
     this.state = {
       nombres: [],
     };
-    console.log(this.state, props);
   }
 
   addNombre() {
@@ -20,21 +19,23 @@ export default class App extends Component {
   }
   removePlayer(index) {
     this.state.nombres.splice(index, 1);
-    console.log(this.state.nombres, "$$$");
+    // console.log(this.state.nombres, "$$$");
     this.setState({ nombres: this.state.nombres });
   }
 
   handleSubmit(e) {
-    console.log(this.state, "$$$");
-    console.log(this.state.nombres.length);
+    // console.log(this.state, "$$$");
+    // console.log(this.state.nombres.length);
     this.props.navigation.navigate("QuitzFriends", this.state.nombres);
+  }
+
+  handleBack(e) {
+    this.props.navigation.goBack();
   }
 
   render() {
     return (
-      
       <View style={styles.container}>
-    
         <Text style={styles.namePlayer}> Elije a los jugadores </Text>
         {this.state.nombres.map((nombre, index) => {
           return (
@@ -43,39 +44,45 @@ export default class App extends Component {
                 onChange={(e) => this.handleChange(e.nativeEvent.text, index)}
                 value={nombre}
                 style={{
-                  color:"#f7f7f7",
+                  color: "#f7f7f7",
                   height: 40,
                   width: 200,
                   borderColor: "#ffcd3c",
                   borderWidth: 2,
-                  borderRadius:15
-
+                  borderRadius: 15,
+                  textAlign: "center",
+                  fontSize: 20,
                 }}
               ></TextInput>
-             
+
               <Icon
-  raised
-  name='delete'
-  type='material-community'
-  color='#f50'
-  onPress={() => this.removePlayer(index)} />
+                raised
+                name="delete"
+                type="material-community"
+                color="#f50"
+                onPress={() => this.removePlayer(index)}
+              />
             </View>
           );
         })}
         <Button
-        buttonStyle={styles.containerButton}
-          title="Agregar jugador"s
+          buttonStyle={styles.containerButton}
+          title="Agregar jugador"
+          s
           onPress={(e) => this.addNombre(e)}
-
         ></Button>
 
-       
         <Button
           title="A jugar!"
           onPress={(e) => this.handleSubmit(e)}
-          buttonStyle={styles.containerButton}
+          buttonStyle={styles.containerButtonPlay}
         ></Button>
-    
+
+        <Button
+          title="Atras"
+          onPress={(e) => this.handleBack(e)}
+          buttonStyle={styles.containerButtonBack}
+        ></Button>
       </View>
     );
   }
@@ -88,18 +95,37 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  namePlayer:{
+  namePlayer: {
     color: "#f6cd61",
     fontSize: 24,
-    marginBottom:5
+    marginBottom: 5,
   },
-  containerInput:  {
-    flexDirection:"row",
-    alignItems:"center"
+  containerInput: {
+    flexDirection: "row",
+    alignItems: "center",
   },
-  containerButton:{
-    width:'90%',
-    height:40
-    ,backgroundColor:'#f6cd61',borderRadius:15, marginTop:8, marginBottom:5
-  }
+  containerButton: {
+    width: "90%",
+    height: 40,
+    backgroundColor: "#f6cd61",
+    borderRadius: 15,
+    marginTop: 8,
+    marginBottom: 5,
+  },
+  containerButtonPlay: {
+    width: "90%",
+    height: 40,
+    backgroundColor: "#a8df65",
+    borderRadius: 15,
+    marginTop: 30,
+    marginBottom: 5,
+  },
+  containerButtonBack: {
+    width: "90%",
+    height: 40,
+    backgroundColor: "#d63447",
+    borderRadius: 15,
+    marginTop: 50,
+    marginBottom: 5,
+  },
 });

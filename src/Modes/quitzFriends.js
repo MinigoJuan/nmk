@@ -21,7 +21,8 @@ const Users = [
   },
   {
     id: "1",
-    question: "Los que tengan el celular en la mesa tomaran ",
+    question: "ponle un reto a ",
+    question2: "o tendra que beber",
   },
   {
     id: "2",
@@ -300,7 +301,8 @@ const Users = [
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
+
+    // console.log(props.navigation.state);
 
     this.position = new Animated.ValueXY();
     this.state = {
@@ -310,6 +312,9 @@ export default class App extends React.Component {
       isVisibleDIDI: false,
       isVisibleUber: false,
       isVisibleRappi: false,
+      numberNameView: 1,
+      numberNameView2: 0,
+      names: props.navigation.state.params,
     };
   }
   onCloseIcon = () => {
@@ -347,10 +352,12 @@ export default class App extends React.Component {
       60000
     );
     this.GenerateRandomNumber(), this.GenerateRandomNumberDrink();
+    this.GenerateRandomName2();
     this.PanResponder = PanResponder.create({
       onStartShouldSetPanResponder: (evt, gestureState) => {
         true;
         this.GenerateRandomNumber(), this.GenerateRandomNumberDrink();
+        this.GenerateRandomName2();
       },
       onPanResponderMove: (evt, gestureState) => {
         this.position.setValue({ x: gestureState.dx, y: gestureState.dy });
@@ -382,8 +389,6 @@ export default class App extends React.Component {
     });
   }
   componentWillUnmount = () => {
-    console.log("unready");
-
     this.setState({
       isVisibleUE: false,
       isVisibleDIDI: false,
@@ -408,7 +413,7 @@ export default class App extends React.Component {
     Alert.alert("Código copiado", "Utilizalo en Rappi", [{ text: "OK" }]);
   };
   GenerateRandomNumber = () => {
-    var RandomNumber = Math.floor(Math.random() * (64 - 0)) + 1;
+    var RandomNumber = Math.floor(Math.random() * (1 - 0)) + 1;
     this.setState({
       currentIndex: RandomNumber,
     });
@@ -419,6 +424,23 @@ export default class App extends React.Component {
       currentIndexDrink: RandomNumber,
     });
   };
+
+  GenerateRandomName2 = () => {
+    var RandomNumber2 = Math.floor(Math.random() * this.state.names.length);
+    var RandomNumber = Math.floor(Math.random() * this.state.names.length);
+    if (RandomNumber2 != RandomNumber) {
+      this.setState({
+        numberNameView: RandomNumber,
+        numberNameView2: RandomNumber2,
+      });
+    } else {
+      this.setState({
+        numberNameView: this.state.names.length - 2,
+        numberNameView2: this.state.names.length - 1,
+      });
+    }
+  };
+
   renderUsers = () => {
     return Users.map((item, i) => {
       if (i < this.state.currentIndex) {
@@ -463,16 +485,18 @@ export default class App extends React.Component {
 
                 <Text
                   style={{
-                    color: "#fffdf9",
+                    color: "#faeee7",
                     paddingTop: 15,
                     fontSize: 27,
                   }}
                 >
-                  {item.question} {this.state.currentIndexDrink} tragos
+                  {this.state.names[this.state.numberNameView]} {item.question}
+                  {this.state.names[this.state.numberNameView2]}
+                  {item.question2} {this.state.currentIndexDrink} tragos
                 </Text>
                 <Text
                   style={{
-                    color: "#f5f0e3",
+                    color: "#d4f3ef",
                     paddingTop: 20,
                     fontSize: 14,
                   }}
