@@ -22,8 +22,8 @@ export class Category extends Component {
               <Tile
                 onPress={() => this.props.navigation.navigate("addFriends")}
                 containerStyle={styles.Tilestyle}
-                imageSrc={require("../../assets/imagesofCategories/photofriends.png")}
-                title="Modo amigos"
+                imageSrc={require("../../assets/imagesofCategories/photofriends.jpg")}
+                title="Ponte Pedo"
                 featured
                 caption="Juega cuando estes con tus amigos, en App Beer y diviertete poniendo retos a tus amigos en las fiestas."
               ></Tile>
@@ -34,7 +34,7 @@ export class Category extends Component {
               <Tile
                 onPress={() => this.props.navigation.navigate("QuitzShot")}
                 containerStyle={styles.Tilestyle}
-                imageSrc={require("../../assets/imagesofCategories/tequila.png")}
+                imageSrc={require("../../assets/imagesofCategories/tequila.jpg")}
                 title="Verdad, Reto o Shot"
                 featured
                 caption="Llena de shots el ambiente de SHOT´S, todos tienen el poder de repartir shot´s a todo el mundo. "

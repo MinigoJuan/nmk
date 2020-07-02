@@ -21,280 +21,276 @@ const Users = [
   },
   {
     id: "1",
-    question: "ponle un reto a ",
-    question2: "o tendra que beber",
+    question:
+      "ponle un reto a cualquiera de esta mesa, sino lo hace tendra que tomar ",
   },
   {
     id: "2",
-    question: "Todos los que tengan Novia/o tomaran ",
+    question: "si tienes Novia o Novio tendras que tomar ",
   },
   {
     id: "3",
-    question: "La primera persona que encuentre un objeto Negro reparte ",
+    question: "elije al más listo de la mesa y tendra que tomar ",
   },
   {
     id: "4",
-    question: "Los que estan bebiendo Tequila, Vodka, Whiskey o Ron tomaran",
+    question: "canta una canción de reggaeton sino toma ",
   },
   {
     id: "5",
-    question: "Si has falsificado una firma bebe ",
+    question: "si has hecho beso de 3 tendras que tomar ",
   },
   {
     id: "6",
     question:
-      "Obliguen a un amigo a que le mande un mensaje a su ex o el tomara",
+      "obliga a un amigo a que le mande un mensaje a su ex, sino lo hace el tomara ",
   },
   {
     id: "7",
-    question: "Todos tomense una selfie o tomen ",
+    question:
+      "publica en un estado de Facebook el nombre de tu Crush o tendras que tomar ",
   },
   {
     id: "8",
-    question: "Elegir a la persona más inteligente y tendra que beber ",
+    question: "elije a la persona más inteligente y tendra que beber ",
   },
   {
     id: "9",
-    question:
-      "Cada uno adpta el nombre de la persona a su derecha, el que se equivoque bebe ",
+    question: "si traes una camisa tendras que beber ",
   },
   {
     id: "10",
-    question: "Todos los que hayan perdido un telefono móvil, beban ",
+    question: "elije a le persona más joven y esta tendra que beber ",
   },
   {
     id: "11",
-    question: "Canciones de MANA, los que repitan las canciones, beban ",
+    question: "elije a la persona con más bebida y tendra que beber ",
   },
   {
     id: "12",
     question:
-      "Caricachupas presenta nombres de Marcas de cerveza, si se equivocan beban",
+      "elije a la persona más complicada en el amor y tendra que beber ",
   },
   {
     id: "13",
-    question: "Todos los que tengan telefono Android, beban",
+    question:
+      "declarate tu amor a la persona que te gusta, sino tendras que beber ",
   },
   {
     id: "14",
-    question: "Los que tengan tenis tendran que beber",
+    question: "si traes tenis tendras que beber ",
   },
   {
     id: "15",
-    question: "Todos los hijos unicos beban ",
+    question: "reparte a 3 personas y estas tendran que beber ",
   },
-  { id: "16", question: "Juega 'yo nunca nunca', el que este en minoria beba" },
+  { id: "16", question: "si aun no estas borracho, tienes que beber" },
   {
     id: "17",
-    question: "Si mañana tienes que ir a la escuela bebe ",
+    question: "si mañana tienes que ir a la escuela bebe ",
   },
   {
     id: "18",
-    question: "Los que estaban borrachos ayer, beban ",
+    question: "si estabas borracho ayer, tienes que repartir ",
   },
   {
     id: "19",
-    question: "Los que hoy tengan una prenda o accesorio negro beban",
+    question: "si tienes un accesorio negro, tienes que beber ",
   },
   {
     id: "20",
-    question:
-      "¿Que prefieres, clima frio o caliente?, los que esten en mayoria tendra que beber ",
+    question: "elije a la persona que tenga un accesorio azul y reparte ",
   },
   {
     id: "21",
-    question: "Si nunca has visto una pelicula de Marvel, Bebe ",
+    question: "si nunca has visto una pelicula de Marvel, bebe ",
   },
   {
     id: "22",
-    question:
-      "Todo el mundo elije entre Tacos o Pizza, quienes esten en minoria tomaran",
+    question: "si algun dia haz sido infiel, tendras que beber ",
   },
   {
     id: "23",
-    question: "Los que sean fan de los Vengadores que se beban ",
+    question: "si estas bebiendo tequila, tendras que beber ",
   },
   {
     id: "24",
-    question: "Si alguna vez has tenido sexo con alguien mayor de edad bebe ",
+    question: "si alguna vez has tenido sexo con alguien mayor de edad, bebe ",
   },
   {
     id: "25",
-    question: "Los que esten tomando cerveza, beban ",
+    question:
+      "obliga a un amigo a que le mande mensaje a su novia diciendo ´Esto no esta funcionando´, sino bebe  ",
   },
   {
     id: "26",
-    question: "Los jugadores con las copas menos llenas beban",
+    question: "si tienes tu bebida llena, tendras que tomar ",
   },
   {
     id: "27",
-    question: "Caricachupas presenta nombres de Marcas de Cigarros ",
+    question:
+      "juega, Caricachupas presenta nombres de Marcas de Cigarros, quien se equivoque tendra que beber ",
   },
   {
     id: "28",
     question:
-      "Reta a quién quieras a una guerra de pulgares, el que pierda tendra que beber",
+      "reta a quién quieras a una guerra de pulgares, quien pierda tendra que beber ",
   },
   {
     id: "29",
     question:
-      "Elije una palabra, la primera persona que cante el principio de una canción que contenga la canción, reparte ",
+      "elije una palabra, la primera persona que cante el principio de una canción que contenga la canción, reparte ",
   },
   {
     id: "30",
-    question: "El que tenga menos cabello bebe ",
+    question: "el jugador del lado izquierdo tuyo, tendra que beber ",
   },
   {
     id: "31",
-    question: "Elegir a los mas carismaticos y repartir 2 tragos",
+    question: "elege a los mas carismaticos y repartir ",
   },
 
   {
     id: "32",
-    question: "Si la persona que te gusta esta en este momento, bebe",
+    question: "si la persona que te gusta esta presente en este momento, bebe ",
   },
   {
     id: "33",
-    question: "Todos los que hayan llegado tarde beban",
+    question: "si traes un Iphone, tendras que beber ",
   },
   {
     id: "34",
-    question: "Los que hoy no se hayan bañado beban ",
+    question: "si eres soltero, tendras que beber ",
   },
   {
     id: "35",
-    question: "Los que lleguen a tocarse la naris con la lengua reparten",
+    question: "elije al jugador mas peludo, y tendra que tomar ",
   },
   {
     id: "36",
-    question: "Los que estan fumando ahora mismo beban 2",
+    question: "elije a un amigo y este tendra que tomar ",
   },
   {
     id: "37",
-    question: "El jugador mas alto reparte ",
+    question: "elije al jugador más calvo o pelón y dale ",
   },
   {
     id: "38",
-    question: "TIENES EL HUANTELETE DEL INFINITO!, Reparte ",
+    question: "si tu telefono es Android, tendras que beber ",
   },
   {
     id: "39",
-    question: "La persona que encuetre al jugador mas joven reparte ",
+    question: "canta una canción de banda, sino tendras que tomar ",
   },
 
   {
     id: "40",
-    question: "Elegir a la persona más desafortunada para el amor y darle ",
+    question: "elije al jugador mas ligador y repartele ",
   },
   {
     id: "41",
-    question:
-      "Trata de decir los números del uno al diez en cualquier otro idioma o decir el abecedario al revés, si no puedes bebes ",
+    question: "si ya estas borracho, reparteles a todos tus amigos ",
   },
   {
     id: "42",
     question:
-      "Nombres de canciones que comiencen con la letra G, quien se equivoque bebe",
+      "Nombres de canciones que comiencen con la letra G, quien se equivoque bebe ",
   },
   {
     id: "43",
-    question: "Yo nunca nunca he",
+    question: "juega ´Yo nunca nunca he´, o todos beban ",
   },
   {
     id: "44",
-    question:
-      "FONDO para el ultimo que haya llegado el dia de hoy y este mismo reparte",
+    question: "elije a la persona que haya llegado al final, y repartele ",
   },
   {
     id: "45",
-    question: "TODOS LOS HOMBRES BEBEN",
+    question: "reparte a todas las personas que tengan su telefono afuera  ",
   },
   {
     id: "46",
-    question:
-      "Caricachupas presenta nombres de Marcas de Cigarros quien se equivoque bebe",
+    question: "elije a la persona más carismatica y tendra que beber ",
   },
   {
     id: "47",
-    question: "La persona más guapa reparte",
+    question:
+      "di el nombre de la persona que te gusta en este momento, sino tendras que beber ",
   },
   {
     id: "48",
-    question: "La primera persona que saque un condón reparte ",
+    question: "toma una foto y publicala en un estado en instagram o bebe ",
   },
   {
     id: "49",
-    question: "Elegir al jugador más tonto y repartir ",
+    question: "elije al jugador más tonto y tendra que repartir ",
   },
   {
     id: "50",
-    question: "La persona más lista puede repartir",
+    question: "si extrañas a tu ex, entonces bebe ",
   },
   {
     id: "51",
-    question:
-      "¿Qué prefieres, Pepsi o Coca-Cola? los que esten en minoria beberan",
+    question: "si has tenido sueños eróticos en esta semana, bebe ",
   },
   {
     id: "52",
     question:
-      "¿Qué prefieres, Hot-dog o Hamburguesa? los que esten en minoria beberan",
+      "pon un reto, los que lleguen a tocarse la nariz con la lengua, reparten ",
   },
   {
     id: "53",
-    question: "Toman todos los que tengan un Iphone beberan ",
+    question: "elije al GAMER de la mesa y repartele ",
   },
   {
     id: "54",
-    question: "Si la ultima pelicula que hayas visto ha sido romantica bebe ",
+    question: "si la ultima pelicula que hayas visto ha sido romantica bebe ",
   },
   {
     id: "55",
-    question:
-      "Caricachupas presenta nombres de Nombres de canciones de Juleta Venegas quien se equivoque o repita, bebe",
+    question: "si tu pareja esta presente, los 2 tendran que tomar ",
   },
   {
     id: "56",
-    question: "Confiesa algo que te haya pasado en la cama, sino bebe",
+    question: "confiesa algo que te haya pasado en la cama, sino bebe ",
   },
   {
     id: "57",
-    question: "La persona que tenga el mejor cuerpo, y tendra que beber ",
+    question:
+      "elije a la persona que tenga el mejor cuerpo, y tendra que beber ",
   },
   {
     id: "58",
-    question: "Los que esten bebiendo tequila tomaran ",
+    question: "elije a la persona mas borracha y repartele  ",
   },
   {
     id: "59",
-    question:
-      "Elije a la persona que duerma más que todos, esta tendra que beber",
+    question: "si alguna vez has grabado TikToks, tendras que beber ",
   },
   {
     id: "60",
     question:
-      "Nombra cosas que se llevan de vacaciones, el que se repita que beba ",
+      "elije al jugador que siempre se emborracha primero y repartirle ",
   },
   {
     id: "61",
-    question: "Caricachupas presenta nombres de Redes sociales ",
+    question: "pidele el número a la persona que te guste o tengras que tomar ",
   },
   {
     id: "62",
-    question: "Bebe un trago si estas soltero, Si tienes pareja bebe ",
+    question: "si tienes calcetines blancos tendras que beber ",
   },
   {
     id: "63",
-    question: "Las personas que sean diestras beben ",
-    answers: "",
+    question: "elije a las personas que utilicen lentes y reparteles ",
   },
   {
     id: "64",
-    question: "Propon una Palabra Prohibida quien la diga, beberan ",
+    question: "si alguna vez has estado en la FRIEND ZONE, tendras que tomar ",
   },
   {
     id: "65",
-    question: "Al que menos este tomando repartan le ",
+    question: "al que menos este tomando repartele, ",
   },
 ];
 
@@ -413,7 +409,7 @@ export default class App extends React.Component {
     Alert.alert("Código copiado", "Utilizalo en Rappi", [{ text: "OK" }]);
   };
   GenerateRandomNumber = () => {
-    var RandomNumber = Math.floor(Math.random() * (1 - 0)) + 1;
+    var RandomNumber = Math.floor(Math.random() * (64 - 0)) + 1;
     this.setState({
       currentIndex: RandomNumber,
     });
@@ -480,7 +476,7 @@ export default class App extends React.Component {
                     fontSize: 30,
                   }}
                 >
-                  ¡MODO AMIGOS!
+                  ¡MODO PONTE PEDO!
                 </Text>
 
                 <Text
@@ -491,8 +487,7 @@ export default class App extends React.Component {
                   }}
                 >
                   {this.state.names[this.state.numberNameView]} {item.question}
-                  {this.state.names[this.state.numberNameView2]}
-                  {item.question2} {this.state.currentIndexDrink} tragos
+                  {this.state.currentIndexDrink} tragos
                 </Text>
                 <Text
                   style={{

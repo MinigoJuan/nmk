@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "MINIGO",
-    "slug": "MINIGO",
+    "name": "Beers",
+    "slug": "Beers",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": ["ios", "android", "web"],
     "version": "1.2.0",
     "orientation": "portrait",
-    "scheme": "minigo",
+    "scheme": "beers",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -23,7 +23,7 @@
     },
     "android": {
       "package": "com.minigocompany.MinigoApp",
-      "versionCode": 3
+      "versionCode": 5
     }
   }
 }

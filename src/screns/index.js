@@ -6,7 +6,7 @@ import {
   Image,
   ActivityIndicator,
   Linking,
-  Alert
+  Alert,
 } from "react-native";
 import { Button, Overlay, SocialIcon } from "react-native-elements";
 import Icon from "react-native-vector-icons/FontAwesome";
@@ -15,33 +15,33 @@ class index extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isVisible: false
+      isVisible: false,
     };
   }
 
   Hangletogo = () => {
     this.props.navigation.navigate("Category");
     this.setState({
-      isVisible: true
+      isVisible: true,
     });
   };
 
   _handleOpenURL = () => {
     let appUrl = `twitter://user?screen_name=minigoapp`;
     Linking.canOpenURL(appUrl)
-      .then(supported => {
+      .then((supported) => {
         if (!supported) {
           Alert.alert(
-            "¿Estas seguro que 'Minigo' pueda abrir 'Twitter'?",
+            "¿Estas seguro que 'BEERS' pueda abrir 'Twitter'?",
             " ",
             [
               {
                 text: "OK",
                 onPress: () => {
                   Linking.openURL("https://twitter.com/MinigoApp");
-                }
+                },
               },
-              { text: "Cancelar", onPress: () => {}, style: "cancel" }
+              { text: "Cancelar", onPress: () => {}, style: "cancel" },
             ],
             { cancelable: false }
           );
@@ -49,17 +49,17 @@ class index extends Component {
           return Linking.openURL(appUrl);
         }
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
       });
   };
   _handleOpenURLI = () => {
     let appUrl = `instagram://user?username=minigoapp`;
     Linking.canOpenURL(appUrl)
-      .then(supported => {
+      .then((supported) => {
         if (!supported) {
           Alert.alert(
-            "¿Estas seguro que 'Minigo' pueda abrir 'Instagram'?",
+            "¿Estas seguro que 'BEERS' pueda abrir 'Instagram'?",
             "",
             [
               {
@@ -68,9 +68,9 @@ class index extends Component {
                   Linking.openURL(
                     "https://www.instagram.com/minigoapp/?hl=es-la"
                   );
-                }
+                },
               },
-              { text: "Cancelar", onPress: () => {}, style: "cancel" }
+              { text: "Cancelar", onPress: () => {}, style: "cancel" },
             ],
             { cancelable: false }
           );
@@ -78,17 +78,17 @@ class index extends Component {
           return Linking.openURL(appUrl);
         }
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
       });
   };
   _handleOpenURLF = () => {
     let appUrl = `fb://profile/109469397165034`;
     Linking.canOpenURL(appUrl)
-      .then(supported => {
+      .then((supported) => {
         if (!supported) {
           Alert.alert(
-            "¿Estas seguro que 'Minigo' pueda abrir 'FaceBook'?",
+            "¿Estas seguro que 'BEERS' pueda abrir 'FaceBook'?",
             "",
             [
               {
@@ -97,9 +97,9 @@ class index extends Component {
                   Linking.openURL(
                     "https://www.facebook.com/MinigoApp/?view_public_for=109469397165034"
                   );
-                }
+                },
               },
-              { text: "Cancelar", onPress: () => {}, style: "cancel" }
+              { text: "Cancelar", onPress: () => {}, style: "cancel" },
             ],
             { cancelable: false }
           );
@@ -107,7 +107,7 @@ class index extends Component {
           return Linking.openURL(appUrl);
         }
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
       });
   };
@@ -121,13 +121,14 @@ class index extends Component {
         <View style={styles.Textstyle}>
           <Image
             resizeMode="contain"
-            style={{ width: 300, height: 180 }}
+            style={{ width: 250, height: 160 }}
             PlaceholderContent={<ActivityIndicator />}
             source={require("../../assets/imagesofCategories/logobeer.png")}
           ></Image>
         </View>
         <View>
           <Image
+            resizeMode="contain"
             PlaceholderContent={<ActivityIndicator />}
             style={styles.ImageView}
             source={require("../../assets/imagenbeer.png")}
@@ -137,7 +138,7 @@ class index extends Component {
           <Button
             onPress={() => this.Hangletogo()}
             buttonStyle={styles.BtnStyle}
-            title="Comienza"
+            title="A Jugar!"
             icon={
               <Icon
                 name="check"
@@ -186,12 +187,12 @@ class index extends Component {
                   marginBottom: 10,
                   fontWeight: "normal",
                   fontSize: 15,
-                  color: "#f7be16"
+                  color: "#f7be16",
                 }}
               >
                 El abuso del consumo del alcohol puede ser perjudicial para tu
-                salud, Te recomendamos que si utilizas Minigo debes ser mayor de
-                18 años
+                salud, Te recomendamos que si utilizas BEERS debes ser mayor de
+                18 años.
               </Text>
             </View>
             <View style={{ marginTop: 8, marginBottom: 3 }}>
@@ -215,28 +216,28 @@ const styles = StyleSheet.create({
     backgroundColor: "#19212E",
     alignContent: "space-around",
     flexWrap: "wrap",
-    flex: 1
+    flex: 1,
   },
   Textstyle: {
-    marginTop: 35
+    marginTop: 35,
   },
   TextInitial: {
     fontSize: 28,
-    color: "white"
+    color: "white",
   },
   ImageView: {
-    width: 190,
-    height: 180
+    width: 300,
+    height: 250,
   },
   BtnStyle: {
     marginBottom: 15,
     borderRadius: 5,
-    backgroundColor: "#da4302"
+    backgroundColor: "#da4302",
   },
   IconsView: {
     flexDirection: "row",
-    marginBottom: 8
-  }
+    marginBottom: 8,
+  },
 });
 
 export default index;
